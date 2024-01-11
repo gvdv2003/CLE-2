@@ -53,12 +53,12 @@ if (isset($_POST['submit'])) {
                 // Credentials not valid
             }else{
                 //error incorrect log in
-                $errors['loginFailed'] = 'Wachtwoord is onjuist';
+                $errors['loginFailed'] = 'onjuist';
             }
             // User doesn't exist
         }else{
             //error incorrect log in
-            $errors['loginFailed'] = 'credentials not valid';
+            $errors['loginFailed'] = 'onjuist';
         }
     }
 }
@@ -91,7 +91,7 @@ if (isset($_POST['submit'])) {
 
     <?php if (isset($_SESSION['login'])) { ?>
         <p>Je bent ingelogd!</p>
-        <p><a href="logout.php">Uitloggen</a> / <a href="lijst.php">Naar het reservering overzicht</a></p>
+        <p><a href="logout.php">Uitloggen</a> / <a href="list.php">Naar het reservering overzicht</a></p>
 
     <?php } else { ?>
         <p class="help is-danger ">
