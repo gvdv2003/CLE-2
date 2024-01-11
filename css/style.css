@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    background-color: #F2F2F2;
+}
+
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #202959;
+}
+
+h2 {
+    font-family: 'Roboto Flex', sans-serif;
+    color:  #F2F2F2;
+    background-color: #202959;
+}
+
+h3 {
+    font-family: 'Roboto Flex', sans-serif;
+    color: #202959;
+}
+
+h4 {
+    font-family: 'Roboto Flex', sans-serif;
+    color: #202959;
+}
+
