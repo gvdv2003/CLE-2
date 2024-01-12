@@ -36,20 +36,10 @@ if (isset($_POST['submit'])) {
                 $_SESSION['firstname'] = $user['first_name'];
                 // Redirect to secure page
                 $_SESSION['login'] = true;
-                if($_GET['page'] == 'create'){
-                    header('Location: create.php');
-                }else if($_GET['page'] == 'edit'){
-                    $index = $_GET['id'];
-                    header("Location: edit.php?id=$index");
-                    echo 'edit';
-                }else if($_GET['page'] == 'delete') {
-                    $index = $_GET['id'];
-                    header("Location: delete.php?id=$index");
-                    echo 'delete';
-                }else {
-                    header('Location: lijst.php');
-                    echo 'lijst';
-                }
+
+                    header('Location: tijdschema.php');
+
+
                 // Credentials not valid
             }else{
                 //error incorrect log in
@@ -84,7 +74,7 @@ if (isset($_POST['submit'])) {
     <a href="info.php">info</a>
 
     <a href="login.php">medewerker</a>
-    <a href="sign_up.php">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</a>
+
 </nav>
 
 <main>
@@ -92,7 +82,7 @@ if (isset($_POST['submit'])) {
     <h2>inloggen</h2>
     <?php if (isset($_SESSION['login'])) { ?>
         <p>Je bent ingelogd!</p>
-        <p><a href="logout.php">Uitloggen</a> / <a href="list.php">Naar het reservering overzicht</a></p>
+        <p><a href="logout.php">Uitloggen</a> / <a href="tijdschema.php">Naar het reservering overzicht</a></p>
 
     <?php } else { ?>
         <p class="help is-danger ">
