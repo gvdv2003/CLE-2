@@ -7,6 +7,7 @@ require_once "includes/database.php";
 $first_name = '';
 $last_name = '';
 $date = '';
+$persons = '';
 $time = '';
 $reservation = '';
 
@@ -19,7 +20,7 @@ if (isset($_POST['submit'])) {
     $last_name = mysqli_escape_string($db, $_POST['last_name']);
     $date = mysqli_escape_string($db, $_POST['date']);
     $time = mysqli_escape_string($db, $_POST['time']);
-
+    $persons = mysqli_escape_string($db, $_POST['persons']);
 
     $errors = [];
     if($first_name == '') {
@@ -34,18 +35,21 @@ if (isset($_POST['submit'])) {
     if($time == '') {
         $errors['time'] = 'dit veld is verplicht.';
     }
+    if($persons == '') {
+        $errors['persons'] = 'dit veld is verplicht.';
+    }
 
     if (empty($errors)) {
         //INSERT in DB
 
-        $query = "INSERT INTO reservation (first_name, last_name, date, time)
-                VALUES ('$first_name', '$last_name', '$date' , '$time')";
+        $query = "INSERT INTO reservation (first_name, last_name, date, time, persons)
+                VALUES ('$first_name', '$last_name', '$date' , '$time' , '$persons')";
 
         $result = mysqli_query($db, $query);
         // If query succeeded
         if ($result) {
             // Redirect to login page
-            $reservation = 'de reservering is voltooid voor '.$date.' om '.$time;
+            $reservation = 'de reservering is voltooid voor '.$date.' om '.$time. ' voor '.$persons. ' personen.';
         } else {
             $errors['db'] = mysqli_error($db);
         }
@@ -113,27 +117,68 @@ if (isset($_POST['submit'])) {
             </p>
         </label>
 
-        <label for="date">
+        <label for="persons">aantal personen:
+        <select type="persons"  id="persons" name="persons" value="<?= htmlentities($persons) ?>">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+
+            <?= $errors['persons'] ?? '' ?>
+        </label>
+
+
+
+
+            <label for="date">
             Datum:
             <input type="date" id="date" name="date" min=<?= $currentdate ?> value="<?= htmlentities($date) ?>"/>
             <p class="help is-danger">
                 <?= $errors['date'] ?? '' ?>
             </p>
-        </label>
+            </label>
 
-        <label for="time">
-            Tijd:
-            <input type="time" id="time" name="time" min=<?= $currentdate ?> value="<?= htmlentities($time) ?>"/>
-            <p class="help is-danger">
-                <?= $errors['time'] ?? '' ?>
-            </p>
-        </label>
+
+
+
+
+        <label for="time">Tijd:</label>
+        <select type="time"  id="time" name="time" value="<?= htmlentities($time) ?>">
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:00">17:00</option>
+            <option value="18:00">18:00</option>
+            <option value="19:00">19:00</option>
+            <option value="20:00">20:00</option>
+            <option value="21:00">21:00</option>
+            <option value="22:00">22:00</option>
+
+            <?= $errors['time'] ?? '' ?>
+
+
+
+        </select>
 
         <button type="submit" name="submit">submit</button>
 
     </form
 
     <p><?= $worked ?? '' ?></p>
+
+    <p>voor groepen groter dan 12 neem contact op.</p>
 
 
 
