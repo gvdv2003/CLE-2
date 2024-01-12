@@ -10,17 +10,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>home</title>
 </head>
+<header>
+    <nav>
+        <a href="home.php">Home</a>
+        <a href="actueel.php">actueel</a>
+        <a href="bezoek.php">bezoek</a>
+        <a href="trainingen.php">trainingen</a>
+        <a href="info.php">info</a>
+
+        <a href="login.php">medewerker</a>
+
+    </nav>
+
+</header>
 <body>
 
-<nav>
-    <a href="home.php">Home</a>
-    <a href="actueel.php">actueel</a>
-    <a href="bezoek.php">bezoek</a>
-    <a href="trainingen.php">trainingen</a>
-    <a href="info.php">info</a>
 
-    <a href="login.php">medewerker</a>
-
-</nav>
 
 <h1>welkom bij CUBE</h1>

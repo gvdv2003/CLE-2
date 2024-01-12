@@ -10,8 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>actueel</title>
 </head>
-<body>
-
+<header>
 <nav>
     <a href="home.php">Home</a>
     <a href="actueel.php">actueel</a>
@@ -22,3 +21,8 @@
     <a href="login.php">medewerker</a>
 
 </nav>
+
+</header>
+<body>
+
+
