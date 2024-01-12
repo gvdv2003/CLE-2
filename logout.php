@@ -1,6 +1,14 @@
- <?php
+<?php
+// Start the session.
+session_start();
+// destroy the session.
+session_unset();
+session_destroy();
+// Redirect to login page
+
+// Exit the code.
 ?>
-     <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,4 +31,8 @@
 
 </nav>
 
-<h1>welkom bij CUBE</h1>
+
+<h1>je bent uitgelogd</h1>
+<a href="home.php">ga terug naar home.</a>
+<p>   </p>
+<a href="login.php"> opnieuw inloggen.</a>

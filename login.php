@@ -84,11 +84,12 @@ if (isset($_POST['submit'])) {
     <a href="info.php">info</a>
 
     <a href="login.php">medewerker</a>
+    <a href="sign_up.php">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</a>
 </nav>
 
 <main>
 
-
+    <h2>inloggen</h2>
     <?php if (isset($_SESSION['login'])) { ?>
         <p>Je bent ingelogd!</p>
         <p><a href="logout.php">Uitloggen</a> / <a href="list.php">Naar het reservering overzicht</a></p>
