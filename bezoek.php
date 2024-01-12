@@ -149,9 +149,8 @@ if (isset($_POST['submit'])) {
 
 
 
-
         <label for="time">Tijd:</label>
-        <select type="time"  id="time" name="time" value="<?= htmlentities($time) ?>">
+        <select type="time" id="time" name="time" value="<?= htmlentities($time) ?>">
             <option value="10:00">10:00</option>
             <option value="11:00">11:00</option>
             <option value="12:00">12:00</option>
@@ -167,8 +166,6 @@ if (isset($_POST['submit'])) {
             <option value="22:00">22:00</option>
 
             <?= $errors['time'] ?? '' ?>
-
-
 
         </select>
 
