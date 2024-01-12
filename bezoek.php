@@ -1,66 +1,61 @@
 <?php
 
-session_start();
-
-//May I visit this page? Check the SESSION
-if(!isset($_SESSION['login'])){
-    $_SESSION['error'] = "Je moet ingelogd zijn";
-    header('Location: login.php?page=create');
-
-}
-
 /** @var $db */
 require_once "includes/database.php";
 
 
-$film = '';
-$genre = '';
-$regiseur = '';
-$kijken_op = '';
+$first_name = '';
+$last_name = '';
+$date = '';
+$time = '';
+$reservation = '';
+
+$currenttime = time();
+$currentdate = date("Y-m-d",$currenttime );
 
 
 if (isset($_POST['submit'])) {
-    $film = mysqli_escape_string($db, $_POST['film']);
-    $genre = mysqli_escape_string($db, $_POST['genre']);
-    $regiseur = mysqli_escape_string($db, $_POST['regiseur']);
-    $kijken_op = mysqli_escape_string($db, $_POST['kijken_op']);
+    $first_name = mysqli_escape_string($db, $_POST['first_name']);
+    $last_name = mysqli_escape_string($db, $_POST['last_name']);
+    $date = mysqli_escape_string($db, $_POST['date']);
+    $time = mysqli_escape_string($db, $_POST['time']);
 
 
     $errors = [];
-    if($film == '') {
-        $errors['film'] = 'vergeet niet de filmnaam in te vullen.';
+    if($first_name == '') {
+        $errors['first_name'] = 'dit veld is verplicht.';
     }
-    if($genre == '') {
-        $errors['genre'] = 'vergeet niet het genre in te vullen.';
+    if($last_name == '') {
+        $errors['last_name'] = 'dit veld is verplicht.';
     }
-    if($regiseur == '') {
-        $errors['regiseur'] = 'vergeet niet de regiseur in te vullen.';
+    if($date == '') {
+        $errors['date'] = 'dit veld is verplicht.';
     }
-    if($kijken_op == '') {
-        $errors['kijken_op'] = 'vergeet niet om in te vullen waar je deze film kan kijken';
+    if($time == '') {
+        $errors['time'] = 'dit veld is verplicht.';
     }
 
     if (empty($errors)) {
         //INSERT in DB
 
+        $query = "INSERT INTO reservation (first_name, last_name, date, time)
+                VALUES ('$first_name', '$last_name', '$date' , '$time')";
 
-        $queryregiseur = "INSERT IGNORE INTO regiseur (name) VALUES ('$regiseur')";
-        $querymovie = "INSERT INTO movielist (film, genre, regiseur_id, kijken_op)
-                SELECT '$film', '$genre', regiseur.id , '$kijken_op'
-                FROM regiseur
-                WHERE name = '$regiseur'";
-        $resultregiseur = mysqli_query($db, $queryregiseur);
-        $resultmovie = mysqli_query($db, $querymovie);
-
-
-        if ($resultregiseur && $resultmovie) {
-            header('Location: lijst.php');
+        $result = mysqli_query($db, $query);
+        // If query succeeded
+        if ($result) {
+            // Redirect to login page
+            $reservation = 'de reservering is voltooid voor '.$date.' om '.$time;
         } else {
             $errors['db'] = mysqli_error($db);
         }
-
-
     }
+
+
+  
+       
+
+
 
 
 
@@ -78,7 +73,7 @@ if (isset($_POST['submit'])) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Create</title>
+    <title>Bezoek</title>
 </head>
 <body>
 
@@ -98,37 +93,39 @@ if (isset($_POST['submit'])) {
 
 
 
-    <h2>Create</h2>
+    <h2>Reserveer</h2>
+
+    <?= $reservation ?? '' ?>
     <form action="" method="post">
-        <label for="film">
-            Filmnaam:
-            <input type="text" id="film" name="film" value="<?= htmlentities($film) ?>"/>
+        <label for="first_name">
+            Voornaam:
+            <input type="text" id="first_name" name="first_name" value="<?= htmlentities($first_name) ?>"/>
             <p class="help is-danger">
-                <?= $errors['film'] ?? '' ?>
+                <?= $errors['first_name'] ?? '' ?>
             </p>
         </label>
 
-        <label for="genre">
-            Genre:
-            <input type="text" id="genre" name="genre" value="<?= htmlentities($genre) ?>"/>
+        <label for="last_name">
+            Achternaam:
+            <input type="text" id="last_name" name="last_name" value="<?= htmlentities($last_name) ?>"/>
             <p class="help is-danger">
-                <?= $errors['genre'] ?? '' ?>
+                <?= $errors['last_name'] ?? '' ?>
             </p>
         </label>
 
-        <label for="regiseur">
-            Regiseur
-            <input type="text" id="regiseur" name="regiseur" value="<?= htmlentities($regiseur) ?>"/>
+        <label for="date">
+            Datum:
+            <input type="date" id="date" name="date" min=<?= $currentdate ?> value="<?= htmlentities($date) ?>"/>
             <p class="help is-danger">
-                <?= $errors['regiseur'] ?? '' ?>
+                <?= $errors['date'] ?? '' ?>
             </p>
         </label>
 
-        <label for="password">
-            te bekijken op:
-            <input type="text" id="kijken_op" name="kijken_op" value="<?= htmlentities($kijken_op) ?>"/>
+        <label for="time">
+            Tijd:
+            <input type="time" id="time" name="time" min=<?= $currentdate ?> value="<?= htmlentities($time) ?>"/>
             <p class="help is-danger">
-                <?= $errors['kijken_op'] ?? '' ?>
+                <?= $errors['time'] ?? '' ?>
             </p>
         </label>
 
@@ -149,63 +146,4 @@ if (isset($_POST['submit'])) {
 
 
 
-
-<?php
-
-/** @var mysqli $db */
-require_once "includes/database.php";
-
-
-
-
-if(isset($_POST['submit'])) {
-
-
-    $worked = '';
-
-    $film = $_POST['film'];
-    $genre = $_POST['genre'];
-    $regiseur = $_POST['regiseur'];
-    $kijken_op = $_POST['kijken_op'];
-
-    if(!empty($_POST['film']) && !empty($_POST['genre']) && !empty($_POST['regiseur']) && !empty($_POST['kijken_op'])){
-
-        $query="INSERT INTO movielist (film, genre, regiseur, kijken_op)
-        VALUES ('$film', '$genre', '$regiseur', '$kijken_op')";
-
-        $movielist = mysqli_query($db, $query);
-
-        $worked = 'De film is toegevoegd';
-
-
-    };
-
-
-
-
-
-    $errors = [];
-    if($film == '') {
-        $errors['film'] = 'vergeet niet de filmnaam in te vullen.';
-    }
-    if($genre == '') {
-        $errors['genre'] = 'vergeet niet het genre in te vullen.';
-    }
-    if($regiseur == '') {
-        $errors['regiseur'] = 'vergeet niet de regiseur in te vullen.';
-    }
-    if($kijken_op == '') {
-        $errors['kijken_op'] = 'vergeet niet om in te vullen waar je deze film kan kijken';
-    }
-
-
-
-}
-
-mysqli_close($db);
-
-
-
-
-?>
 
