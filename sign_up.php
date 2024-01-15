@@ -20,16 +20,16 @@ if (isset($_POST['submit'])) {
 
     $errors = [];
     if ($firstName == "") {
-        $errors['firstname'] = "vergeet niet je voornaam in te vullen";
+        $errors['firstname'] = "dit veld is verplicht.";
     }
     if ($lastName == "") {
-        $errors['lastname'] = "Vergeet niet je achternaam in te vullen";
+        $errors['lastname'] = "dit veld is verplicht.";
     }
     if ($email == "") {
-        $errors['e-mail'] = "vergeet niet je email in te vullen";
+        $errors['e-mail'] = "dit veld is verplicht.";
     }
     if ($password == "") {
-        $errors['password'] = "vergeet niet je wachtwoord in te vullen";
+        $errors['password'] = "dit veld is verplicht.";
     }
 
     // If data valid
@@ -63,18 +63,22 @@ if (isset($_POST['submit'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>registreer</title>
 </head>
+<header>
+    <nav>
+        <a href="home.php">Home</a>
+        <a href="actueel.php">actueel</a>
+        <a href="bezoek.php">bezoek</a>
+        <a href="trainingen.php">trainingen</a>
+        <a href="info.php">info</a>
+
+        <a href="login.php">medewerker</a>
+
+    </nav>
+
+</header>
 <body>
 
-<nav>
-    <a href="home.php">Home</a>
-    <a href="actueel.php">actueel</a>
-    <a href="bezoek.php">bezoek</a>
-    <a href="trainingen.php">trainingen</a>
-    <a href="info.php">info</a>
 
-    <a href="login.php">medewerker</a>
-
-</nav>
 
 <main>
 
@@ -82,7 +86,7 @@ if (isset($_POST['submit'])) {
 
 
     <h2>Registreren</h2>
-    <form action="registreer.php" method="post">
+    <form action="sign_up.php" method="post">
         <label for="firstName">
             Voornaam:
             <input type="text" id="firstName" name="firstName" value="<?= htmlentities($firstName)?>"/>
@@ -109,7 +113,7 @@ if (isset($_POST['submit'])) {
 
         <label for="password">
             Wachtwoord:
-            <input type="text" id="password" name="password" value="<?= $password ?? ''?>"/>
+            <input type="password" id="password" name="password" value="<?= $password ?? ''?>"/>
             <p class="help is-danger">
                 <?= $errors['password'] ?? '' ?>
             </p>
