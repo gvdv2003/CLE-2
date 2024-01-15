@@ -36,6 +36,8 @@ session_destroy();
 
 
 <h1>je bent uitgelogd</h1>
-<a href="home.php">ga terug naar home.</a>
-<p>   </p>
-<a href="login.php"> opnieuw inloggen.</a>
+
+
+
+<p><a href="home.php">ga terug naar home.</a> /  <a href="login.php"> opnieuw inloggen.</a>  </p>
+

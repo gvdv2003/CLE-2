@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
 
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0 0;
+
+
+}
+
+p {
+    color: #202959;
+}
+
 a {
     font-family: 'Roboto Flex', sans-serif;
-    color: #202959;
+    color: #F2F2F2;
     text-decoration: none;
 }
 
@@ -13,7 +25,7 @@ h1 {
 
 h2 {
     font-family: 'Roboto Flex', sans-serif;
-    color: #202959;
+    color: #F2F2F2;
 }
 
 h3 {
@@ -26,20 +38,14 @@ h4 {
     color: #202959;
 }
 
-body {
-    font-family: 'Roboto Flex', sans-serif;
-    background-color: #f2f2f2;
 
-    display: flex;
-    flex-direction: row;
 
-}
 
 .sidenav {
     position: fixed;
 
     height: 100%;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 4px 0px 15px black;
     top: 0;
     left: 0;
     text-decoration: none;
@@ -48,42 +54,90 @@ body {
 
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.sidenav div {
+    margin-top: 2vh;    
+}
+
+.logo {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.login svg{
+    height: 50px;
+}
+
+.login a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     align-content: center;
 
-
+    
 }
 
-#login {
+.sidenavContainer {
 
-
-
-}
-
-.sidenavContainer{
+    padding: 30px;
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: start;
     justify-content: space-between;
-    margin: 1vw;
+    
 }
 
-.container{
-    background-color: aquamarine;
+.container {
+
+    background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+
 
 }
 
+header {
+
+    width: 100%;
+    height: 200px;
+    background-image: url(/images/cube_background.png);
+
+
+}
 
 main {
-    padding-left: 300px;
+    max-width: 500px;
 }
 
 
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #E5E5E5;
 
-    padding-left: 300px;
 
 }
 
+footer section {
+    display: flex;
+    gap: 30px;
+}
