@@ -126,6 +126,86 @@ while($row22 = mysqli_fetch_assoc($result22))
 { $reservationlist22[] = $row22;
 }
 
+$totalg10 = 0;
+$totalp10 = 0;
+foreach ($reservationlist10 as $index10 => $person10){
+    $totalp10 = $totalp10 + $person10['persons'];
+    $totalg10++;
+}
+$totalg11 = 0;
+$totalp11 = 0;
+foreach ($reservationlist11 as $index11 => $person11){
+    $totalp11 = $totalp11 + $person11['persons'];
+    $totalg11++;
+}
+$totalg12 = 0;
+$totalp12 = 0;
+foreach ($reservationlist12 as $index12 => $person12){
+    $totalp12 = $totalp12 + $person12['persons'];
+    $totalg12++;
+}
+$totalg13 = 0;
+$totalp13= 0;
+foreach ($reservationlist13 as $index13 => $person13){
+    $totalp13 = $totalp13 + $person13['persons'];
+    $totalg13++;
+}
+$totalg14 = 0;
+$totalp14 = 0;
+foreach ($reservationlist14 as $index14 => $person14){
+    $totalp14= $totalp14 + $person14['persons'];
+    $totalg14++;
+}
+$totalg15 = 0;
+$totalp15 = 0;
+foreach ($reservationlist15 as $index15 => $person15){
+    $totalp15= $totalp15 + $person15['persons'];
+    $totalg15++;
+}
+$totalg16 = 0;
+$totalp16 = 0;
+foreach ($reservationlist16 as $index16 => $person16){
+    $totalp16= $totalp16 + $person16['persons'];
+    $totalg16++;
+}
+$totalg17 = 0;
+$totalp17 = 0;
+foreach ($reservationlist17 as $index17 => $person17){
+    $totalp17= $totalp17 + $person17['persons'];
+    $totalg17++;
+}
+$totalg18 = 0;
+$totalp18 = 0;
+foreach ($reservationlist18 as $index18 => $person18){
+    $totalp18= $totalp18 + $person18['persons'];
+    $totalg18++;
+}
+$totalg19 = 0;
+$totalp19 = 0;
+foreach ($reservationlist19 as $index19 => $person19){
+    $totalp19= $totalp19 + $person19['persons'];
+    $totalg19++;
+}
+$totalg20 = 0;
+$totalp20= 0;
+foreach ($reservationlist20 as $index20 => $person20){
+    $totalp20= $totalp20 + $person20['persons'];
+    $totalg20++;
+}
+$totalg21 = 0;
+$totalp21 = 0;
+foreach ($reservationlist21 as $index21 => $person21){
+    $totalp21= $totalp21 + $person21['persons'];
+    $totalg21++;
+}
+$totalg22 = 0;
+$totalp22 = 0;
+foreach ($reservationlist22 as $index22 => $person22){
+    $totalp22= $totalp22 + $person22['persons'];
+    $totalg22++;
+}
+
+
 
 
 // Close the connection
@@ -193,7 +273,7 @@ mysqli_close($db);
 
             <style>
                 .collapsible {
-                    background-color: #777;
+                    background-color: #202959;
                     color: white;
                     cursor: pointer;
                     padding: 18px;
@@ -202,10 +282,11 @@ mysqli_close($db);
                     text-align: left;
                     outline: none;
                     font-size: 15px;
+
                 }
 
                 .active, .collapsible:hover {
-                    background-color: #555;
+                    background-color: #1b1257;
                 }
 
                 .content {
@@ -218,7 +299,7 @@ mysqli_close($db);
             </style>
 
             <p>reserveringen voor <?= $date ?></p>
-            <button class="collapsible">10:00</button>
+            <button class="collapsible"> 10:00      aantal mensen: <?= $totalp10 ?>     aantal groepen: <?=$totalg10?>   </button>
             <div class="content">
                 <table class="table is-striped">
                     <thead>
@@ -256,7 +337,7 @@ mysqli_close($db);
                     </tbody>
                 </table>
             </div>
-            <button class="collapsible">11:00</button>
+            <button class="collapsible">11:00        aantal mensen: <?= $totalp11 ?>     aantal groepen: <?=$totalg11?> </button>
             <div class="content">
                 <table class="table is-striped">
                     <thead>
@@ -294,7 +375,7 @@ mysqli_close($db);
                     </tbody>
                 </table>
             </div>
-            <button class="collapsible">12:00</button>
+            <button class="collapsible"> 12:00      aantal mensen: <?= $totalp12 ?>     aantal groepen: <?=$totalg12?>   </button>
             <div class="content">
                 <table class="table is-striped">
                     <thead>
@@ -333,7 +414,7 @@ mysqli_close($db);
                 </table>
             </div>
 
-            <button class="collapsible">13:00</button>
+            <button class="collapsible"> 13:00      aantal mensen: <?= $totalp13 ?>     aantal groepen: <?=$totalg13?>   </button>
             <div class="content">
                 <table class="table is-striped">
                     <thead>
@@ -373,7 +454,7 @@ mysqli_close($db);
             </div>
 
 
-            <button class="collapsible">14:00</button>
+            <button class="collapsible"> 14:00      aantal mensen: <?= $totalp14 ?>     aantal groepen: <?=$totalg14?>   </button>
             <div class="content">
                 <table class="table is-striped">
                     <thead>
@@ -413,7 +494,7 @@ mysqli_close($db);
             </div>
 
 
-            <button class="collapsible">15:00</button>
+            <button class="collapsible"> 15:00      aantal mensen: <?= $totalp15 ?>     aantal groepen: <?=$totalg15?>   </button>
             <div class="content">
                 <table class="table is-striped">
                     <thead>
@@ -453,7 +534,7 @@ mysqli_close($db);
             </div>
 
 
-            <button class="collapsible">16:00</button>
+            <button class="collapsible"> 16:00      aantal mensen: <?= $totalp16 ?>     aantal groepen: <?=$totalg16?>   </button>
             <div class="content">
                 <table class="table is-striped">
                     <thead>
@@ -492,7 +573,7 @@ mysqli_close($db);
                 </table>
             </div>
 
-            <button class="collapsible">17:00</button>
+            <button class="collapsible"> 17:00      aantal mensen: <?= $totalp17 ?>     aantal groepen: <?=$totalg17?>   </button>
             <div class="content">
                 <table class="table is-striped">
                     <thead>
@@ -531,7 +612,7 @@ mysqli_close($db);
                 </table>
             </div>
 
-            <button class="collapsible">18:00</button>
+            <button class="collapsible"> 18:00      aantal mensen: <?= $totalp18 ?>     aantal groepen: <?=$totalg18?>   </button>
             <div class="content">
                 <table class="table is-striped">
                     <thead>
@@ -570,7 +651,7 @@ mysqli_close($db);
                 </table>
             </div>
 
-            <button class="collapsible">19:00</button>
+            <button class="collapsible"> 19:00      aantal mensen: <?= $totalp19 ?>     aantal groepen: <?=$totalg19?>   </button>
             <div class="content">
                 <table class="table is-striped">
                     <thead>
@@ -609,7 +690,7 @@ mysqli_close($db);
                 </table>
             </div>
 
-            <button class="collapsible">20:00</button>
+            <button class="collapsible"> 20:00      aantal mensen: <?= $totalp20 ?>     aantal groepen: <?=$totalg20?>   </button>
             <div class="content">
                 <table class="table is-striped">
                     <thead>
@@ -648,7 +729,7 @@ mysqli_close($db);
                 </table>
             </div>
 
-            <button class="collapsible">21:00</button>
+            <button class="collapsible"> 21:00      aantal mensen: <?= $totalp21 ?>     aantal groepen: <?=$totalg21?></button>
             <div class="content">
                 <table class="table is-striped">
                     <thead>
@@ -687,7 +768,7 @@ mysqli_close($db);
                 </table>
             </div>
 
-            <button class="collapsible">22:00</button>
+            <button class="collapsible"> 22:00      aantal mensen: <?= $totalp22 ?>     aantal groepen: <?=$totalg22?></button>
             <div class="content">
                 <table class="table is-striped">
                     <thead>
