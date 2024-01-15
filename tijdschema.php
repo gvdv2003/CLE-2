@@ -263,7 +263,7 @@ mysqli_close($db);
                 </label>
 
 
-                <button type="submit" name="submit">submit</button>
+                <button type="submit" name="submit">Zoeken op datum</button>
 
 
 
@@ -298,7 +298,7 @@ mysqli_close($db);
                 }
             </style>
 
-            <p>reserveringen voor <?= $date ?></p>
+            <h2>reserveringen voor <?= $date ?></h2>
             <button class="collapsible"> 10:00      aantal mensen: <?= $totalp10 ?>     aantal groepen: <?=$totalg10?>   </button>
             <div class="content">
                 <table class="table is-striped">
