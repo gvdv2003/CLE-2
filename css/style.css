@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
 
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0 0;
+
+
+}
+
+p {
+    color: #202959;
+}
+
 a {
     font-family: 'Roboto Flex', sans-serif;
-    color: #202959;
+    color: #F2F2F2;
     text-decoration: none;
 }
 
@@ -13,7 +25,7 @@ h1 {
 
 h2 {
     font-family: 'Roboto Flex', sans-serif;
-    color: #202959;
+    color: #F2F2F2;
 }
 
 h3 {
@@ -26,20 +38,16 @@ h4 {
     color: #202959;
 }
 
-body {
-    font-family: 'Roboto Flex', sans-serif;
-    background-color: #f2f2f2;
 
-    display: flex;
-    flex-direction: row;
-
+svg {
+    align-self: center;
 }
 
 .sidenav {
     position: fixed;
 
     height: 100%;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 5px 0px 5px black;
     top: 0;
     left: 0;
     text-decoration: none;
@@ -54,13 +62,9 @@ body {
 
 }
 
-#login {
+#login {}
 
-
-
-}
-
-.sidenavContainer{
+.sidenavContainer {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -68,22 +72,46 @@ body {
     margin: 1vw;
 }
 
-.container{
-    background-color: aquamarine;
+.container {
+
+    background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+
 
 }
 
+header {
+
+    width: 100%;
+    height: 200px;
+    background-image: url(/images/cube_background.png);
+
+
+}
 
 main {
-    padding-left: 300px;
+    max-width: 300px;
 }
 
 
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #E5E5E5;
 
-    padding-left: 300px;
 
 }
 
+footer section {
+    display: flex;
+    gap: 30px;
+}
