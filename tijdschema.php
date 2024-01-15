@@ -12,9 +12,13 @@ if(!isset($_SESSION['login'])) {
 require_once "includes/database.php";
 
 $currenttime = time();
-$date= date("Y-m-d",$currenttime );;
+$date = date("Y-m-d", $currenttime);;
 
-$date = mysqli_escape_string($db, $_POST['date']);
+if (isset($_POST['submit'])) {
+    $date = mysqli_escape_string($db, $_POST['date']);
+}
+
+
 
 //10 uur
 $query10 = "SELECT * FROM reservation WHERE date = '$date' AND time = '10:00'";
@@ -34,6 +38,21 @@ while($row11 = mysqli_fetch_assoc($result11))
 { $reservationlist11[] = $row11;
 }
 //12 uur
+$query12 = "SELECT * FROM reservation WHERE date = '$date' AND time = '12:00'";
+$result12 = mysqli_query($db, $query12)
+or die('Error '.mysqli_error($db).' with query '.$query12);
+$reservationlist12 = [];
+while($row12 = mysqli_fetch_assoc($result12))
+{ $reservationlist12[] = $row12;
+}
+//13 uur
+$query13 = "SELECT * FROM reservation WHERE date = '$date' AND time = '13:00'";
+$result13 = mysqli_query($db, $query13)
+or die('Error '.mysqli_error($db).' with query '.$query13);
+$reservationlist13 = [];
+while($row13 = mysqli_fetch_assoc($result13))
+{ $reservationlist13[] = $row13;
+}
 
 
 
@@ -205,31 +224,126 @@ mysqli_close($db);
             </div>
             <button class="collapsible">12:00</button>
             <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <table class="table is-striped">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>voornaam</th>
+                        <th>achternaam</th>
+                        <th>personen</th>
+                        <th>datum</th>
+                        <th>tijd</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <td colspan="8" class="has-text-centered"></td>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+
+
+                    <?php foreach ($reservationlist12 as $index => $reservationondate12) { ?>
+                        <tr>
+                            <td><?= $index + 1 ?></td>
+                            <td><?= $reservationondate12['first_name'] ?></td>
+                            <td><?= $reservationondate12['last_name'] ?></td>
+                            <td><?= $reservationondate12['persons'] ?></td>
+                            <td><?= $reservationondate12['date'] ?></td>
+                            <td><?= $reservationondate12['time'] ?></td>
+                            <td><a href="edit.php?id=<?= htmlentities($reservationondate12['id']) ?>">Edit</a></td>
+                            <td><a href="delete.php?id=<?= htmlentities($reservationondate12['id']) ?>">Delete</a></td>
+                        </tr>
+                    <?php } ?>
+                    </tbody>
+                </table>
             </div>
 
-            <button class="collapsible">12:00</button>
+            <button class="collapsible">13:00</button>
+            <div class="content">
+                <table class="table is-striped">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>voornaam</th>
+                        <th>achternaam</th>
+                        <th>personen</th>
+                        <th>datum</th>
+                        <th>tijd</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <td colspan="8" class="has-text-centered"></td>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+
+
+                    <?php foreach ($reservationlist13 as $index => $reservationondate13) { ?>
+                        <tr>
+                            <td><?= $index + 1 ?></td>
+                            <td><?= $reservationondate13['first_name'] ?></td>
+                            <td><?= $reservationondate13['last_name'] ?></td>
+                            <td><?= $reservationondate13['persons'] ?></td>
+                            <td><?= $reservationondate13['date'] ?></td>
+                            <td><?= $reservationondate13['time'] ?></td>
+                            <td><a href="edit.php?id=<?= htmlentities($reservationondate13['id']) ?>">Edit</a></td>
+                            <td><a href="delete.php?id=<?= htmlentities($reservationondate13['id']) ?>">Delete</a></td>
+                        </tr>
+                    <?php } ?>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <button class="collapsible">14:00</button>
             <div class="content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
 
 
-            <button class="collapsible">12:00</button>
+            <button class="collapsible">15:00</button>
             <div class="content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
 
 
-            <button class="collapsible">12:00</button>
+            <button class="collapsible">16:00</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="collapsible">17:00</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="collapsible">18:00</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="collapsible">19:00</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="collapsible">21:00</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="collapsible">22:00</button>
             <div class="content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
 
 
-            <button class="collapsible">12:00</button>
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
 
             <script>
                 var coll = document.getElementsByClassName("collapsible");
@@ -250,41 +364,7 @@ mysqli_close($db);
 
 
 
-            <table class="table is-striped">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>voornaam</th>
-                    <th>achternaam</th>
-                    <th>personen</th>
-                    <th>datum</th>
-                    <th>tijd</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
-                </tr>
-                </thead>
-                <tfoot>
-                <tr>
-                    <td colspan="9" class="has-text-centered">&copy; My Collection</td>
-                </tr>
-                </tfoot>
-                <tbody>
 
-
-                <?php foreach ($reservationlist10 as $index => $reservationondate) { ?>
-                    <tr>
-                        <td><?= $index + 1 ?></td>
-                        <td><?= $reservationondate['first_name'] ?></td>
-                        <td><?= $reservationondate['last_name'] ?></td>
-                        <td><?= $reservationondate['persons'] ?></td>
-                        <td><?= $reservationondate['date'] ?></td>
-                        <td><?= $reservationondate['time'] ?></td>
-                        <td><a href="edit.php?id=<?= htmlentities($reservationondate['id']) ?>">Edit</a></td>
-                        <td><a href="delete.php?id=<?= htmlentities($reservationondate['id']) ?>">Delete</a></td>
-                    </tr>
-                <?php } ?>
-                </tbody>
-            </table>
         </div>
     </div>
 </main>
