@@ -93,9 +93,6 @@ if (isset($_POST['submit'])) {
 
 </header>
 <body>
-
-
-
 <main>
 
 
