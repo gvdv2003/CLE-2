@@ -14,7 +14,7 @@ p {
 
 a {
     font-family: 'Roboto Flex', sans-serif;
-    color: #202959;
+    color: #F2F2F2;
     text-decoration: none;
 }
 
@@ -25,7 +25,7 @@ h1 {
 
 h2 {
     font-family: 'Roboto Flex', sans-serif;
-    color: #202959  ;
+    color: #F2F2F2;
 }
 
 h3 {
@@ -52,7 +52,6 @@ h4 {
 
     background-color: #3D4DA8;
 
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,10 +59,9 @@ h4 {
     justify-content: center;
 }
 
-.sidenavContainer div {
-    margin-top: 5vh;    
+.sidenav div {
+    margin-top: 2vh;    
 }
-
 
 .logo {
     padding-top: 5vh;
@@ -98,17 +96,6 @@ h4 {
     align-items: start;
     justify-content: space-between;
     
-    
-}
-
-.sidenav a {
-    color: #F2F2F2;
-    font-size: 1.2rem;
-}
-
-.sidenav h2 {
-    color: #F2F2F2;
-    font-size: 1rem;
 }
 
 .container {
@@ -136,20 +123,7 @@ header {
 }
 
 main {
-    padding-left: 300px;
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.containerMain {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    width: 70vw;
-
-    
+    max-width: 500px;
 }
 
 
@@ -166,32 +140,4 @@ footer {
 footer section {
     display: flex;
     gap: 30px;
-}
-
-
-
-
-.collapsible {
-    background-color: #202959;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-
-}
-
-.active, .collapsible:hover {
-    background-color: #1b1257;
-}
-
-.content {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
 }

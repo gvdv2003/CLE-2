@@ -51,49 +51,49 @@
 
 
     <header>
-        <p></p>
+        <div class="header_image"></div>
     </header>
 
     <main>
-        <h1>dit is h1</h1>
-        <h2>dit is h2</h2>
-        <h3>dit is h3</h3>
-        <h4>dit is h4</h4>
-        <p>Als lid van onze trainingsgroepen krijg je 1of 2 keer per week boulderles in je eigen vaste groep. Dat zijn afwisselende trainingen door ervaren boulderaars. Regelmatig organiseren we speciale activiteiten en nemen we deel aan (landelijke) wedstrijden en evenementen. Eens per 8 weken hebben we de Cube Jeugd Cup, onze eigen jeugdcompetitie vol met uitdagende, spannende en moeilijke boulders. Lid worden kan vanaf 6 jaar en kost € 28,00 of € 38,00 per maand.
+        <h1>Trainingen</h1>
+        <h2>Cursussen & Trainingen</h2>
+        <h3 >We hebben een uitgebreid aanbod aan trainingen om je op weg te helpen, je beter te leren boulderen en om je fit en blessurevrij te houden.</h3>
+        <p>Jeugdtrainingen</p>
+        <p>Introductielessen en introductiecursussen</p>
+        <p>Gratis Walk-Ins voor onze bezoekers</p>
+        <p>Masterclasses voor onze vaste bezoekers</p>
+        <p>Wekelijkse trainingen voor volwassenen </p>
+        <h3>Introductielessen </h3>
+        <h4>Gratis introductieles voor nieuwkomers:</h4>
+        <p>Als je voor het eerst komt boulderen dan kun je gewoon langskomen tijdens de openingstijden, Een introductieles is niet nodig, we helpen je graag op weg maar eigenlijk wijst het zich vanzelf.
+            Heb je toch behoefte aan wat hulp bij je eerste keer boulderen? Geen probleem, elke vrijdag om 19:30 verzorgen we een gratis introductieles. </p>
+
+        <h4>Cursus Intro Basiscs</h4>
+        <p>Bij deze 4 weekse cursus leg je de perfecte basis om zelfstandig te boulderen. Naast de spelregels en de veiligheidsregels krijg je een flinke hoeveelheid technieken te zien. In 4 weken kunnen we geen wereldtopper van je maken maar na de cursus ben je er klaar voor om zelfstandig aan de slag te gaan en weet je genoeg om de boulders aan te vallen en de (bewegings) puzzels op te lossen. De cursus is op maandagavond 19.30 - 21.00 uur.</p>
+        <h3>Gratis Walk-ins</h3>
+        <h4>Fysio Walk In</h4>
+        <p>Elke woensdag hebben we een fysio spreekuur van 19:00 tot 19:30 met Mike Jansen van https://www.xperthandtherapie.nl/, waar je terecht kunt voor vragen, behandeling van blessures, sportmedisch onderzoek én trainingsadvies. Gratis intake en en zonder afspraak. Dus heb je last van pijntjes? Loop er niet mee verder en kom langs, ongetwijfeld heeft mike je zo weer topfit.
+            Woensdags van 19:00 tot 19:30. Op de dag zelf even melden bij de bar.</p>
+        <h4>Functional movement</h4>
+        <p>De belasting bij boulderen is redelijk eenzijdig. Het is daarom goed om wat aanvullende oefeningen te doen om je lichaam fit en blessurevrij te houden.
+            Bij deze gratis traininge houdt je in een half uurtje je lichaam tiptop in orde. Je werkt aan mobiliteit, het sterker maken van alle bewegingscomponenten en blessure preventie.
+            Woensdags van 21:00 tot 21:30. Op de dag zelf even melden bij de bar.
+            Kan je niet op woensdag? Check ook onze strength progression workouts op youtube.</p>
+        <h3>Masterclasses</h3>
+        <p>In onze masterclasses pakken we één onderwerp en gaan daarmee aan de slag onder leiding van een expert op dat gebied. De masterclasses zijn voor elk niveau. De trainer is de master, maar als je goed oplet en meedoet wordt je zelf ook misschien een master.
+            Uitzonderingen daargelaten zijn de masterclasses gratis voor onze leden en €5,- als je geen abonnement hebt.  De masterclasses zijn altijd op vrijdagavond vanaf 19:30.
+            > Een overzicht van de geplande masterclasses</p>
+        <h3>Trainingen voor volwassenen</h3>
+        <h4>Weekly Boulder Training:  Technics</h4>
+        <p>Deze training is voor de beginnende boulderaar die in een gezellige groep samen wil trainen Er komt veel techniek aan bod: heelhoeks, toehoeks, vlaggen indraaien, ...maar we klimmen ook vooral veel . Verfijn je klimtechniek en kom net dat stapje verder om dat ene project een keer wel uit te klimmen. De trainingen zijn elke dinsdagavond 20.30 - 22.00 uur.</p>
+        <h4>Weekly Boulder Training:  Tough Technics</h4>
+        <p>De ideale mix voor de wat meer ervaren boulderaar. In een gezellige groep samen trainen Veel techniek en daarnaast word je ook fysiek uitgedaagd.  Deze Tough Technics lessen zijn een uitstekende opstap naar de Weekly Boulder Training: Power& Endurance. De trainingen zijn elke woensdag avond 19.30 - 21.00 uur.</p>
+        <h4>Weekly Boulder Training: Power & Endurance</h4>
+        <p>Word sterker en krijg een beter uithoudingsvermogen. Kracht-, maximaal- en weerstandstraining, allemaal onderdelen die bij deze training aan bod komen om fitter en sterker te worden. Ofwel écht trainen onder begeleiding van een trainer. De trainingen zijn elke donderdag avond 20.30 - 22.00 uur.</p>
 
 
 
 
-Proefles
-Je kunt altijd zelf een keertje komen boulderen met wat vrienden of je ouders. Vind je boulderen leuk en wil je misschien bij onze jeugdtrainingen meedoen kom dan eens langs voor een proefles. Wil je je aanmelden voor een proefles? Stuur dan een mail naar info@cubebouldergym.nl met je naam en je leeftijd en je voorkeur voor een groep. We laten je dan weten wanneer je langs kunt komen voor een proefles.
-
-Een proefles is altijd bij de instroomgroep
-Eén proefles is gratis
-Zorg voor sportieve kleren, klimschoenen huur je bij ons
- 
-
-Lid worden?
-We hebben twee trainings lidmaatschappen voor de jeugd:
-
-Jeugd-trainings-lidmaatschap (vanaf 8 jaar)
-
-één wekelijkse training met je eigen groep op dinsdag óf woensdag
-één training op zaterdag
-gratis deelname Cube Jeugd Cup
-onbeperkt toegang tijdens de normale trainingstijden
-kosten: € 38,- / maand
-
-Jeugd-trainings-lidmaatschap voor de mini's (6-8 jaar)
-
-één wekelijkse training met je eigen groep op dinsdag of zaterdag
-gratis deelname Cube Jeugd Cup
-kosten: € 28,- / maand
- 
-
-Meer info over het lidmaatschap
-
-Inschrijven
-Je aanmelden voor een lidmaatschap kan bij Cube aan de balie.</p>
 
     </main>
 
