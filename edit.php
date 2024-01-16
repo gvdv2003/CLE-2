@@ -197,7 +197,7 @@ mysqli_close($db);
                 </div>
             </form>
 
-            <a class="button mt-4" href="tijdschema.php.php">&laquo; terug naar de tijdschema</a>
+            <a class="button mt-4" href="tijdschema.php">&laquo; terug naar de tijdschema</a>
         </div>
     </section>
 </div>
