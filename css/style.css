@@ -136,7 +136,7 @@ h4 {
 
 header {
 
-    width: 100px;
+    width: 100%;
     height: 200px;
     background-color: rebeccapurple;
     background-image: url(/images/cube_background.png);
@@ -184,7 +184,7 @@ main {
 
 .active, .collapsible:hover {
     background-color: #f2f2f2;
-    
+    border: solid 1px #202959;
 }
 
 

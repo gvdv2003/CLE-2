@@ -241,7 +241,7 @@ mysqli_close($db);
             <section>
 
                 <div>
-                    <h2><a href="bezoek.php" class="navlinks">Home</a></h2>
+                    <h2><a href="home.php" class="navlinks">Home</a></h2>
                 </div>
                 <div>
                     <h2><a href="actueel.php" class="navlinks">Actueel</a></h2>
