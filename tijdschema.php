@@ -268,15 +268,13 @@ mysqli_close($db);
         </div>
     </nav>
 
-
+    <header>
+    asdasdassed
+    </header>
 
 
 
     <main>
-
-
-
-
 
     <h1>Tijdschema</h1>
 

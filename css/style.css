@@ -14,7 +14,7 @@ p {
 
 a {
     font-family: 'Roboto Flex', sans-serif;
-    color: #F2F2F2;
+    color: #202959;
     text-decoration: none;
 }
 
@@ -25,7 +25,7 @@ h1 {
 
 h2 {
     font-family: 'Roboto Flex', sans-serif;
-    color: #F2F2F2;
+    color: #202959;
 }
 
 h3 {
@@ -87,6 +87,17 @@ h4 {
     
 }
 
+
+.container {
+
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .sidenavContainer {
 
     padding: 30px;
@@ -98,33 +109,74 @@ h4 {
     
 }
 
-.container {
+.sidenavContainer div {
+    margin-top: 5vh;
+}
 
-    background-color: #F2F2F2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
+.sidenav a {
+    color: #f2f2f2;
+}
 
 
-
-
+.sidenav a {
+    color: #f2f2f2
 }
 
 header {
 
-    width: 100%;
+    width: 100px;
     height: 200px;
+    background-color: rebeccapurple;
     background-image: url(/images/cube_background.png);
-
 
 }
 
 main {
-    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 10px;
+    background-color: red;
 }
+
+.containerMain {
+    background-color: aqua;
+    
+}
+
+
+
+
+.collapsible {
+    background-color: #202959;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+
+}
+
+.active, .collapsible:hover {
+    background-color: #1b1257;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
 
 
 footer {
@@ -141,3 +193,4 @@ footer section {
     display: flex;
     gap: 30px;
 }
+
