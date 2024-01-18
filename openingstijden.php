@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+table, th, td {
+  border:1px solid black;
+  }
+</style>
 <body>
     <main>
         <h2>Openingstijden</h2>
-        <table>
+        <table style="width:30%">
             <tr>
                 <th>Dag</th>
                 <th>Van</th>
@@ -54,7 +59,7 @@
         <h3>Tijdens de feestdagen hanteren we soms aangepaste openingstijden. Deze staan hieronder vermeld. Op de niet vermelde dagen gelden de reguliere openingstijden.</h3>
 
         <h3>Wij organiseren soms evenementen waarbij alleen deelnemers toegang hebben tot de klimwanden. Niet deelnemers kunnen op dat moment niet boulderen. Soms is dat een deel van de dag, soms de hele dag. Publiek is altijd gratis welkom bij deze evenementen.</h3>
-        <table>
+        <table style="width:30%">
             <tr>
                 <th>Dag</th>
                 <th>Reden</th>
