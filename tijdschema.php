@@ -258,10 +258,15 @@ mysqli_close($db);
                 <a href="tijdschema.php" class="navlinks">
                     <div>Tijdschema</div>
                 </a>
+
+                <a href="medewerkeroverview.php" class="navlinks">
+                    <div>Medewerker overview</div>
+                </a>
              
                 <a href="sign_up.php" class="navlinks">
                     <div>Medewerker toevoegen</div>
                 </a>
+
 
   
                
