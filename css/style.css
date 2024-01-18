@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+
 
 body {
     font-family: 'Roboto Flex', sans-serif;
@@ -71,6 +73,11 @@ h4 {
     align-content: center;
     justify-content: center;
 
+}
+
+.sidenav p{
+    color: #f1f1f1;
+    font-weight: lighter;
 }
 
 .login {
@@ -190,20 +197,25 @@ header {
 
     width: 100%;
     height: 200px;
-    margin-left: 100px;
+   
     
-    background-image: url(../images/cube_background.png);
-    object-fit: contain;
-    background-repeat: none;
 
+
+    background-image: url(../images/cube_background.png);
+    object-fit:fill;
+    background-position: right;
+    background-repeat: none;
+   
 
 }
+
+
 
 main {
     display: flex;
     flex-direction: column;
-
     margin-left: 200px;
+   
 
 
     width: 65vw;
@@ -276,6 +288,3 @@ footer section {
     gap: 30px;
 }
 
-table, th, td {
-    border: 1px solid black;
-}
