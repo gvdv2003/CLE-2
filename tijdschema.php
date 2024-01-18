@@ -304,7 +304,7 @@ mysqli_close($db);
 
     <main>
 
-    <h1>Tijdschema</h1>
+    
 
     <div class=containerMain>
 
