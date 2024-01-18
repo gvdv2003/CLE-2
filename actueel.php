@@ -51,7 +51,7 @@
                                 <div>Over ons</div>
                             </a>
                             <a href="openingstijden.php" class="navlinks" class="dropdown">
-                                <div>Openeningstijden</div>
+                                <div>Openingstijden</div>
                             </a>
                             <a href="contact.php" class="navlinks" class="dropdown">
                                 <div>Contact</div>

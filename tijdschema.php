@@ -260,11 +260,11 @@ mysqli_close($db);
                 </a>
 
                 <a href="medewerkeroverview.php" class="navlinks">
-                    <div>Medewerker overview</div>
+                    <div>Overview accounts</div>
                 </a>
              
                 <a href="sign_up.php" class="navlinks">
-                    <div>Medewerker toevoegen</div>
+                    <div>Account toevoegen</div>
                 </a>
 
 
@@ -304,7 +304,7 @@ mysqli_close($db);
 
     <main>
 
-    <h1>Tijdschema</h1>
+    
 
     <div class=containerMain>
 

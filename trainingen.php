@@ -48,7 +48,7 @@
                                 <div>Over ons</div>
                             </a>
                             <a href="openingstijden.php" class="navlinks" class="dropdown">
-                                <div>Openeningstijden</div>
+                                <div>Openingstijden</div>
                             </a>
                             <a href="contact.php" class="navlinks" class="dropdown">
                                 <div>Contact</div>
@@ -81,11 +81,13 @@
 
 
     <header>
-        <div class="header_image"></div>
-    </header>
+            <div>
+                <h1>Trainingen</h1>
+            </div>
+        </header>
 
     <main>
-        <h1>Trainingen</h1>
+    
         <h2>Cursussen & Trainingen</h2>
         <h3 >We hebben een uitgebreid aanbod aan trainingen om je op weg te helpen, je beter te leren boulderen en om je fit en blessurevrij te houden.</h3>
         <p>Jeugdtrainingen</p>

@@ -22,7 +22,7 @@ a {
 
 h1 {
     font-family: 'Roboto Condensed', sans-serif;
-    color: #202959;
+    color: #f1f1f1;
 }
 
 h2 {
@@ -205,17 +205,24 @@ header {
     object-fit:fill;
     background-position: right;
     background-repeat: none;
-   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 
 }
 
+header div {
+
+    margin-left: 300px;
+}
 
 
 main {
     display: flex;
     flex-direction: column;
     margin-left: 200px;
-   
+   padding: 50px 0;
 
 
     width: 65vw;
