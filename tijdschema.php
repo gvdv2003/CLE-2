@@ -4,7 +4,7 @@
 session_start();
 
 //May I visit this page? Check the SESSION
-if(!isset($_SESSION['login'])) {
+if (!isset($_SESSION['login'])) {
     $_SESSION['error'] = "Je moet ingelogd zijn";
     header('Location: login.php');
 }
@@ -12,7 +12,8 @@ if(!isset($_SESSION['login'])) {
 require_once "includes/database.php";
 
 $currenttime = time();
-$date = date("Y-m-d", $currenttime);;
+$date = date("Y-m-d", $currenttime);
+;
 
 if (isset($_POST['submit'])) {
     $date = mysqli_escape_string($db, $_POST['date']);
@@ -23,185 +24,185 @@ if (isset($_POST['submit'])) {
 //10 uur
 $query10 = "SELECT * FROM reservation WHERE date = '$date' AND time = '10:00'";
 $result10 = mysqli_query($db, $query10)
-or die('Error '.mysqli_error($db).' with query '.$query10);
+    or die('Error ' . mysqli_error($db) . ' with query ' . $query10);
 $reservationlist10 = [];
-while($row10 = mysqli_fetch_assoc($result10))
-{ $reservationlist10[] = $row10;
+while ($row10 = mysqli_fetch_assoc($result10)) {
+    $reservationlist10[] = $row10;
 }
 
 //11 uur
 $query11 = "SELECT * FROM reservation WHERE date = '$date' AND time = '11:00'";
 $result11 = mysqli_query($db, $query11)
-or die('Error '.mysqli_error($db).' with query '.$query11);
+    or die('Error ' . mysqli_error($db) . ' with query ' . $query11);
 $reservationlist11 = [];
-while($row11 = mysqli_fetch_assoc($result11))
-{ $reservationlist11[] = $row11;
+while ($row11 = mysqli_fetch_assoc($result11)) {
+    $reservationlist11[] = $row11;
 }
 //12 uur
 $query12 = "SELECT * FROM reservation WHERE date = '$date' AND time = '12:00'";
 $result12 = mysqli_query($db, $query12)
-or die('Error '.mysqli_error($db).' with query '.$query12);
+    or die('Error ' . mysqli_error($db) . ' with query ' . $query12);
 $reservationlist12 = [];
-while($row12 = mysqli_fetch_assoc($result12))
-{ $reservationlist12[] = $row12;
+while ($row12 = mysqli_fetch_assoc($result12)) {
+    $reservationlist12[] = $row12;
 }
 //13 uur
 $query13 = "SELECT * FROM reservation WHERE date = '$date' AND time = '13:00'";
 $result13 = mysqli_query($db, $query13)
-or die('Error '.mysqli_error($db).' with query '.$query13);
+    or die('Error ' . mysqli_error($db) . ' with query ' . $query13);
 $reservationlist13 = [];
-while($row13 = mysqli_fetch_assoc($result13))
-{ $reservationlist13[] = $row13;
+while ($row13 = mysqli_fetch_assoc($result13)) {
+    $reservationlist13[] = $row13;
 }
 //14 uur
 $query14 = "SELECT * FROM reservation WHERE date = '$date' AND time = '14:00'";
 $result14 = mysqli_query($db, $query14)
-or die('Error '.mysqli_error($db).' with query '.$query14);
+    or die('Error ' . mysqli_error($db) . ' with query ' . $query14);
 $reservationlist14 = [];
-while($row14 = mysqli_fetch_assoc($result14))
-{ $reservationlist14[] = $row14;
+while ($row14 = mysqli_fetch_assoc($result14)) {
+    $reservationlist14[] = $row14;
 }
 //15 uur
 $query15 = "SELECT * FROM reservation WHERE date = '$date' AND time = '15:00'";
 $result15 = mysqli_query($db, $query15)
-or die('Error '.mysqli_error($db).' with query '.$query15);
+    or die('Error ' . mysqli_error($db) . ' with query ' . $query15);
 $reservationlist15 = [];
-while($row15 = mysqli_fetch_assoc($result15))
-{ $reservationlist15[] = $row15;
+while ($row15 = mysqli_fetch_assoc($result15)) {
+    $reservationlist15[] = $row15;
 }
 //16 uur
 $query16 = "SELECT * FROM reservation WHERE date = '$date' AND time = '16:00'";
 $result16 = mysqli_query($db, $query16)
-or die('Error '.mysqli_error($db).' with query '.$query16);
+    or die('Error ' . mysqli_error($db) . ' with query ' . $query16);
 $reservationlist16 = [];
-while($row16 = mysqli_fetch_assoc($result16))
-{ $reservationlist16[] = $row16;
+while ($row16 = mysqli_fetch_assoc($result16)) {
+    $reservationlist16[] = $row16;
 }
 //17 uur
 $query17 = "SELECT * FROM reservation WHERE date = '$date' AND time = '17:00'";
 $result17 = mysqli_query($db, $query17)
-or die('Error '.mysqli_error($db).' with query '.$query17);
+    or die('Error ' . mysqli_error($db) . ' with query ' . $query17);
 $reservationlist17 = [];
-while($row17 = mysqli_fetch_assoc($result17))
-{ $reservationlist17[] = $row17;
+while ($row17 = mysqli_fetch_assoc($result17)) {
+    $reservationlist17[] = $row17;
 }
 //18 uur
 $query18 = "SELECT * FROM reservation WHERE date = '$date' AND time = '18:00'";
 $result18 = mysqli_query($db, $query18)
-or die('Error '.mysqli_error($db).' with query '.$query18);
+    or die('Error ' . mysqli_error($db) . ' with query ' . $query18);
 $reservationlist18 = [];
-while($row18 = mysqli_fetch_assoc($result18))
-{ $reservationlist18[] = $row18;
+while ($row18 = mysqli_fetch_assoc($result18)) {
+    $reservationlist18[] = $row18;
 }
 //19 uur
 $query19 = "SELECT * FROM reservation WHERE date = '$date' AND time = '19:00'";
 $result19 = mysqli_query($db, $query19)
-or die('Error '.mysqli_error($db).' with query '.$query19);
+    or die('Error ' . mysqli_error($db) . ' with query ' . $query19);
 $reservationlist19 = [];
-while($row19 = mysqli_fetch_assoc($result19))
-{ $reservationlist19[] = $row19;
+while ($row19 = mysqli_fetch_assoc($result19)) {
+    $reservationlist19[] = $row19;
 }
 //20 uur
 $query20 = "SELECT * FROM reservation WHERE date = '$date' AND time = '20:00'";
 $result20 = mysqli_query($db, $query20)
-or die('Error '.mysqli_error($db).' with query '.$query20);
+    or die('Error ' . mysqli_error($db) . ' with query ' . $query20);
 $reservationlist20 = [];
-while($row20 = mysqli_fetch_assoc($result20))
-{ $reservationlist20[] = $row20;
+while ($row20 = mysqli_fetch_assoc($result20)) {
+    $reservationlist20[] = $row20;
 }
 //21 uur
 $query21 = "SELECT * FROM reservation WHERE date = '$date' AND time = '21:00'";
 $result21 = mysqli_query($db, $query21)
-or die('Error '.mysqli_error($db).' with query '.$query21);
+    or die('Error ' . mysqli_error($db) . ' with query ' . $query21);
 $reservationlist21 = [];
-while($row21 = mysqli_fetch_assoc($result21))
-{ $reservationlist21[] = $row21;
+while ($row21 = mysqli_fetch_assoc($result21)) {
+    $reservationlist21[] = $row21;
 }
 //22 uur
 $query22 = "SELECT * FROM reservation WHERE date = '$date' AND time = '22:00'";
 $result22 = mysqli_query($db, $query22)
-or die('Error '.mysqli_error($db).' with query '.$query22);
+    or die('Error ' . mysqli_error($db) . ' with query ' . $query22);
 $reservationlist22 = [];
-while($row22 = mysqli_fetch_assoc($result22))
-{ $reservationlist22[] = $row22;
+while ($row22 = mysqli_fetch_assoc($result22)) {
+    $reservationlist22[] = $row22;
 }
 
 $totalg10 = 0;
 $totalp10 = 0;
-foreach ($reservationlist10 as $index10 => $person10){
+foreach ($reservationlist10 as $index10 => $person10) {
     $totalp10 = $totalp10 + $person10['persons'];
     $totalg10++;
 }
 $totalg11 = 0;
 $totalp11 = 0;
-foreach ($reservationlist11 as $index11 => $person11){
+foreach ($reservationlist11 as $index11 => $person11) {
     $totalp11 = $totalp11 + $person11['persons'];
     $totalg11++;
 }
 $totalg12 = 0;
 $totalp12 = 0;
-foreach ($reservationlist12 as $index12 => $person12){
+foreach ($reservationlist12 as $index12 => $person12) {
     $totalp12 = $totalp12 + $person12['persons'];
     $totalg12++;
 }
 $totalg13 = 0;
-$totalp13= 0;
-foreach ($reservationlist13 as $index13 => $person13){
+$totalp13 = 0;
+foreach ($reservationlist13 as $index13 => $person13) {
     $totalp13 = $totalp13 + $person13['persons'];
     $totalg13++;
 }
 $totalg14 = 0;
 $totalp14 = 0;
-foreach ($reservationlist14 as $index14 => $person14){
-    $totalp14= $totalp14 + $person14['persons'];
+foreach ($reservationlist14 as $index14 => $person14) {
+    $totalp14 = $totalp14 + $person14['persons'];
     $totalg14++;
 }
 $totalg15 = 0;
 $totalp15 = 0;
-foreach ($reservationlist15 as $index15 => $person15){
-    $totalp15= $totalp15 + $person15['persons'];
+foreach ($reservationlist15 as $index15 => $person15) {
+    $totalp15 = $totalp15 + $person15['persons'];
     $totalg15++;
 }
 $totalg16 = 0;
 $totalp16 = 0;
-foreach ($reservationlist16 as $index16 => $person16){
-    $totalp16= $totalp16 + $person16['persons'];
+foreach ($reservationlist16 as $index16 => $person16) {
+    $totalp16 = $totalp16 + $person16['persons'];
     $totalg16++;
 }
 $totalg17 = 0;
 $totalp17 = 0;
-foreach ($reservationlist17 as $index17 => $person17){
-    $totalp17= $totalp17 + $person17['persons'];
+foreach ($reservationlist17 as $index17 => $person17) {
+    $totalp17 = $totalp17 + $person17['persons'];
     $totalg17++;
 }
 $totalg18 = 0;
 $totalp18 = 0;
-foreach ($reservationlist18 as $index18 => $person18){
-    $totalp18= $totalp18 + $person18['persons'];
+foreach ($reservationlist18 as $index18 => $person18) {
+    $totalp18 = $totalp18 + $person18['persons'];
     $totalg18++;
 }
 $totalg19 = 0;
 $totalp19 = 0;
-foreach ($reservationlist19 as $index19 => $person19){
-    $totalp19= $totalp19 + $person19['persons'];
+foreach ($reservationlist19 as $index19 => $person19) {
+    $totalp19 = $totalp19 + $person19['persons'];
     $totalg19++;
 }
 $totalg20 = 0;
-$totalp20= 0;
-foreach ($reservationlist20 as $index20 => $person20){
-    $totalp20= $totalp20 + $person20['persons'];
+$totalp20 = 0;
+foreach ($reservationlist20 as $index20 => $person20) {
+    $totalp20 = $totalp20 + $person20['persons'];
     $totalg20++;
 }
 $totalg21 = 0;
 $totalp21 = 0;
-foreach ($reservationlist21 as $index21 => $person21){
-    $totalp21= $totalp21 + $person21['persons'];
+foreach ($reservationlist21 as $index21 => $person21) {
+    $totalp21 = $totalp21 + $person21['persons'];
     $totalg21++;
 }
 $totalg22 = 0;
 $totalp22 = 0;
-foreach ($reservationlist22 as $index22 => $person22){
-    $totalp22= $totalp22 + $person22['persons'];
+foreach ($reservationlist22 as $index22 => $person22) {
+    $totalp22 = $totalp22 + $person22['persons'];
     $totalg22++;
 }
 
@@ -240,21 +241,47 @@ mysqli_close($db);
         <div class=sidenavContainer>
             <section>
 
-                <div>
-                    <h2><a href="home.php" class="navlinks">Home</a></h2>
-                </div>
-                <div>
-                    <h2><a href="actueel.php" class="navlinks">Actueel</a></h2>
-                </div>
-                <div>
-                    <h2><a href="bezoek.php" class="navlinks">Bezoek</a></h2>
-                </div>
-                <div>
-                    <h2><a href="trainingen.php" class="navlinks">Trainingen</a></h2>
-                </div>
-                <div>
-                    <h2><a href="info.php" class="navlinks">Info</a></h2>
-                </div>
+            
+                    <a href="home.php" class="navlinks">
+                        <div>Home</div>
+                    </a>
+             
+              
+                    <a href="actueel.php" class="navlinks">
+                    <div>Actueel</div>
+                    </a>
+               
+              
+                    <a href="bezoek.php" class="navlinks">
+                    <div>Bezoek</div>
+                    </a>
+              
+            
+                    <a href="trainingen.php" class="navlinks">
+                    <div>Trainingen</div>
+                    </a>
+             
+                    <div class="dropdown">
+                        <a>Info</a>
+                        <div class="dropdown-content">
+                            <a href="info.php" class="navlinks" class="dropdown">
+                                <div>Over ons</div>
+                            </a>
+                            <a href="info.php" class="navlinks" class="dropdown">
+                                <div>Openeningstijden</div>
+                            </a>
+                            <a href="info.php" class="navlinks" class="dropdown">
+                                <div>Contact</div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                   
+                    
+
+                    
+               
             </section>
             <section class=login>
 
@@ -269,7 +296,7 @@ mysqli_close($db);
     </nav>
 
     <header>
-    asdasdassed
+    
     </header>
 
 
@@ -303,7 +330,7 @@ mysqli_close($db);
 
 
         <h2>reserveringen voor <?= $date ?></h2>
-        <button class="collapsible"> 10:00      aantal mensen: <?= $totalp10 ?>     aantal groepen: <?=$totalg10?>   </button>
+        <button class="collapsible"> 10:00      aantal mensen: <?= $totalp10 ?>     aantal groepen: <?= $totalg10 ?>   </button>
         <div class="content">
             <table class="table is-striped">
                 <thead>
@@ -327,21 +354,21 @@ mysqli_close($db);
 
 
                 <?php foreach ($reservationlist10 as $index => $reservationondate10) { ?>
-                    <tr>
-                        <td><?= $index + 1 ?></td>
-                        <td><?= $reservationondate10['first_name'] ?></td>
-                        <td><?= $reservationondate10['last_name'] ?></td>
-                        <td><?= $reservationondate10['persons'] ?></td>
-                        <td><?= $reservationondate10['date'] ?></td>
-                        <td><?= $reservationondate10['time'] ?></td>
-                        <td><a href="edit.php?id=<?= htmlentities($reservationondate10['id']) ?>">Edit</a></td>
-                        <td><a href="delete.php?id=<?= htmlentities($reservationondate10['id']) ?>">Delete</a></td>
-                    </tr>
+                                <tr>
+                                    <td><?= $index + 1 ?></td>
+                                    <td><?= $reservationondate10['first_name'] ?></td>
+                                    <td><?= $reservationondate10['last_name'] ?></td>
+                                    <td><?= $reservationondate10['persons'] ?></td>
+                                    <td><?= $reservationondate10['date'] ?></td>
+                                    <td><?= $reservationondate10['time'] ?></td>
+                                    <td><a href="edit.php?id=<?= htmlentities($reservationondate10['id']) ?>">Edit</a></td>
+                                    <td><a href="delete.php?id=<?= htmlentities($reservationondate10['id']) ?>">Delete</a></td>
+                                </tr>
                 <?php } ?>
                 </tbody>
             </table>
         </div>
-        <button class="collapsible">11:00        aantal mensen: <?= $totalp11 ?>     aantal groepen: <?=$totalg11?> </button>
+        <button class="collapsible">11:00        aantal mensen: <?= $totalp11 ?>     aantal groepen: <?= $totalg11 ?> </button>
         <div class="content">
             <table class="table is-striped">
                 <thead>
@@ -365,21 +392,21 @@ mysqli_close($db);
 
 
                 <?php foreach ($reservationlist11 as $index => $reservationondate11) { ?>
-                    <tr>
-                        <td><?= $index + 1 ?></td>
-                        <td><?= $reservationondate11['first_name'] ?></td>
-                        <td><?= $reservationondate11['last_name'] ?></td>
-                        <td><?= $reservationondate11['persons'] ?></td>
-                        <td><?= $reservationondate11['date'] ?></td>
-                        <td><?= $reservationondate11['time'] ?></td>
-                        <td><a href="edit.php?id=<?= htmlentities($reservationondate11['id']) ?>">Edit</a></td>
-                        <td><a href="delete.php?id=<?= htmlentities($reservationondate11['id']) ?>">Delete</a></td>
-                    </tr>
+                                <tr>
+                                    <td><?= $index + 1 ?></td>
+                                    <td><?= $reservationondate11['first_name'] ?></td>
+                                    <td><?= $reservationondate11['last_name'] ?></td>
+                                    <td><?= $reservationondate11['persons'] ?></td>
+                                    <td><?= $reservationondate11['date'] ?></td>
+                                    <td><?= $reservationondate11['time'] ?></td>
+                                    <td><a href="edit.php?id=<?= htmlentities($reservationondate11['id']) ?>">Edit</a></td>
+                                    <td><a href="delete.php?id=<?= htmlentities($reservationondate11['id']) ?>">Delete</a></td>
+                                </tr>
                 <?php } ?>
                 </tbody>
             </table>
         </div>
-        <button class="collapsible"> 12:00      aantal mensen: <?= $totalp12 ?>     aantal groepen: <?=$totalg12?>   </button>
+        <button class="collapsible"> 12:00      aantal mensen: <?= $totalp12 ?>     aantal groepen: <?= $totalg12 ?>   </button>
         <div class="content">
             <table class="table is-striped">
                 <thead>
@@ -403,22 +430,22 @@ mysqli_close($db);
 
 
                 <?php foreach ($reservationlist12 as $index => $reservationondate12) { ?>
-                    <tr>
-                        <td><?= $index + 1 ?></td>
-                        <td><?= $reservationondate12['first_name'] ?></td>
-                        <td><?= $reservationondate12['last_name'] ?></td>
-                        <td><?= $reservationondate12['persons'] ?></td>
-                        <td><?= $reservationondate12['date'] ?></td>
-                        <td><?= $reservationondate12['time'] ?></td>
-                        <td><a href="edit.php?id=<?= htmlentities($reservationondate12['id']) ?>">Edit</a></td>
-                        <td><a href="delete.php?id=<?= htmlentities($reservationondate12['id']) ?>">Delete</a></td>
-                    </tr>
+                                <tr>
+                                    <td><?= $index + 1 ?></td>
+                                    <td><?= $reservationondate12['first_name'] ?></td>
+                                    <td><?= $reservationondate12['last_name'] ?></td>
+                                    <td><?= $reservationondate12['persons'] ?></td>
+                                    <td><?= $reservationondate12['date'] ?></td>
+                                    <td><?= $reservationondate12['time'] ?></td>
+                                    <td><a href="edit.php?id=<?= htmlentities($reservationondate12['id']) ?>">Edit</a></td>
+                                    <td><a href="delete.php?id=<?= htmlentities($reservationondate12['id']) ?>">Delete</a></td>
+                                </tr>
                 <?php } ?>
                 </tbody>
             </table>
         </div>
 
-        <button class="collapsible"> 13:00      aantal mensen: <?= $totalp13 ?>     aantal groepen: <?=$totalg13?>   </button>
+        <button class="collapsible"> 13:00      aantal mensen: <?= $totalp13 ?>     aantal groepen: <?= $totalg13 ?>   </button>
         <div class="content">
             <table class="table is-striped">
                 <thead>
@@ -442,23 +469,23 @@ mysqli_close($db);
 
 
                 <?php foreach ($reservationlist13 as $index => $reservationondate13) { ?>
-                    <tr>
-                        <td><?= $index + 1 ?></td>
-                        <td><?= $reservationondate13['first_name'] ?></td>
-                        <td><?= $reservationondate13['last_name'] ?></td>
-                        <td><?= $reservationondate13['persons'] ?></td>
-                        <td><?= $reservationondate13['date'] ?></td>
-                        <td><?= $reservationondate13['time'] ?></td>
-                        <td><a href="edit.php?id=<?= htmlentities($reservationondate13['id']) ?>">Edit</a></td>
-                        <td><a href="delete.php?id=<?= htmlentities($reservationondate13['id']) ?>">Delete</a></td>
-                    </tr>
+                                <tr>
+                                    <td><?= $index + 1 ?></td>
+                                    <td><?= $reservationondate13['first_name'] ?></td>
+                                    <td><?= $reservationondate13['last_name'] ?></td>
+                                    <td><?= $reservationondate13['persons'] ?></td>
+                                    <td><?= $reservationondate13['date'] ?></td>
+                                    <td><?= $reservationondate13['time'] ?></td>
+                                    <td><a href="edit.php?id=<?= htmlentities($reservationondate13['id']) ?>">Edit</a></td>
+                                    <td><a href="delete.php?id=<?= htmlentities($reservationondate13['id']) ?>">Delete</a></td>
+                                </tr>
                 <?php } ?>
                 </tbody>
             </table>
         </div>
 
 
-        <button class="collapsible"> 14:00      aantal mensen: <?= $totalp14 ?>     aantal groepen: <?=$totalg14?>   </button>
+        <button class="collapsible"> 14:00      aantal mensen: <?= $totalp14 ?>     aantal groepen: <?= $totalg14 ?>   </button>
         <div class="content">
             <table class="table is-striped">
                 <thead>
@@ -482,23 +509,23 @@ mysqli_close($db);
 
 
                 <?php foreach ($reservationlist14 as $index => $reservationondate14) { ?>
-                    <tr>
-                        <td><?= $index + 1 ?></td>
-                        <td><?= $reservationondate14['first_name'] ?></td>
-                        <td><?= $reservationondate14['last_name'] ?></td>
-                        <td><?= $reservationondate14['persons'] ?></td>
-                        <td><?= $reservationondate14['date'] ?></td>
-                        <td><?= $reservationondate14['time'] ?></td>
-                        <td><a href="edit.php?id=<?= htmlentities($reservationondate14['id']) ?>">Edit</a></td>
-                        <td><a href="delete.php?id=<?= htmlentities($reservationondate14['id']) ?>">Delete</a></td>
-                    </tr>
+                                <tr>
+                                    <td><?= $index + 1 ?></td>
+                                    <td><?= $reservationondate14['first_name'] ?></td>
+                                    <td><?= $reservationondate14['last_name'] ?></td>
+                                    <td><?= $reservationondate14['persons'] ?></td>
+                                    <td><?= $reservationondate14['date'] ?></td>
+                                    <td><?= $reservationondate14['time'] ?></td>
+                                    <td><a href="edit.php?id=<?= htmlentities($reservationondate14['id']) ?>">Edit</a></td>
+                                    <td><a href="delete.php?id=<?= htmlentities($reservationondate14['id']) ?>">Delete</a></td>
+                                </tr>
                 <?php } ?>
                 </tbody>
             </table>
         </div>
 
 
-        <button class="collapsible"> 15:00      aantal mensen: <?= $totalp15 ?>     aantal groepen: <?=$totalg15?>   </button>
+        <button class="collapsible"> 15:00      aantal mensen: <?= $totalp15 ?>     aantal groepen: <?= $totalg15 ?>   </button>
         <div class="content">
             <table class="table is-striped">
                 <thead>
@@ -522,23 +549,23 @@ mysqli_close($db);
 
 
                 <?php foreach ($reservationlist15 as $index => $reservationondate15) { ?>
-                    <tr>
-                        <td><?= $index + 1 ?></td>
-                        <td><?= $reservationondate15['first_name'] ?></td>
-                        <td><?= $reservationondate15['last_name'] ?></td>
-                        <td><?= $reservationondate15['persons'] ?></td>
-                        <td><?= $reservationondate15['date'] ?></td>
-                        <td><?= $reservationondate15['time'] ?></td>
-                        <td><a href="edit.php?id=<?= htmlentities($reservationondate15['id']) ?>">Edit</a></td>
-                        <td><a href="delete.php?id=<?= htmlentities($reservationondate15['id']) ?>">Delete</a></td>
-                    </tr>
+                                <tr>
+                                    <td><?= $index + 1 ?></td>
+                                    <td><?= $reservationondate15['first_name'] ?></td>
+                                    <td><?= $reservationondate15['last_name'] ?></td>
+                                    <td><?= $reservationondate15['persons'] ?></td>
+                                    <td><?= $reservationondate15['date'] ?></td>
+                                    <td><?= $reservationondate15['time'] ?></td>
+                                    <td><a href="edit.php?id=<?= htmlentities($reservationondate15['id']) ?>">Edit</a></td>
+                                    <td><a href="delete.php?id=<?= htmlentities($reservationondate15['id']) ?>">Delete</a></td>
+                                </tr>
                 <?php } ?>
                 </tbody>
             </table>
         </div>
 
 
-        <button class="collapsible"> 16:00      aantal mensen: <?= $totalp16 ?>     aantal groepen: <?=$totalg16?>   </button>
+        <button class="collapsible"> 16:00      aantal mensen: <?= $totalp16 ?>     aantal groepen: <?= $totalg16 ?>   </button>
         <div class="content">
             <table class="table is-striped">
                 <thead>
@@ -562,22 +589,22 @@ mysqli_close($db);
 
 
                 <?php foreach ($reservationlist16 as $index => $reservationondate16) { ?>
-                    <tr>
-                        <td><?= $index + 1 ?></td>
-                        <td><?= $reservationondate16['first_name'] ?></td>
-                        <td><?= $reservationondate16['last_name'] ?></td>
-                        <td><?= $reservationondate16['persons'] ?></td>
-                        <td><?= $reservationondate16['date'] ?></td>
-                        <td><?= $reservationondate16['time'] ?></td>
-                        <td><a href="edit.php?id=<?= htmlentities($reservationondate16['id']) ?>">Edit</a></td>
-                        <td><a href="delete.php?id=<?= htmlentities($reservationondate16['id']) ?>">Delete</a></td>
-                    </tr>
+                                <tr>
+                                    <td><?= $index + 1 ?></td>
+                                    <td><?= $reservationondate16['first_name'] ?></td>
+                                    <td><?= $reservationondate16['last_name'] ?></td>
+                                    <td><?= $reservationondate16['persons'] ?></td>
+                                    <td><?= $reservationondate16['date'] ?></td>
+                                    <td><?= $reservationondate16['time'] ?></td>
+                                    <td><a href="edit.php?id=<?= htmlentities($reservationondate16['id']) ?>">Edit</a></td>
+                                    <td><a href="delete.php?id=<?= htmlentities($reservationondate16['id']) ?>">Delete</a></td>
+                                </tr>
                 <?php } ?>
                 </tbody>
             </table>
         </div>
 
-        <button class="collapsible"> 17:00      aantal mensen: <?= $totalp17 ?>     aantal groepen: <?=$totalg17?>   </button>
+        <button class="collapsible"> 17:00      aantal mensen: <?= $totalp17 ?>     aantal groepen: <?= $totalg17 ?>   </button>
         <div class="content">
             <table class="table is-striped">
                 <thead>
@@ -601,22 +628,22 @@ mysqli_close($db);
 
 
                 <?php foreach ($reservationlist17 as $index => $reservationondate17) { ?>
-                    <tr>
-                        <td><?= $index + 1 ?></td>
-                        <td><?= $reservationondate17['first_name'] ?></td>
-                        <td><?= $reservationondate17['last_name'] ?></td>
-                        <td><?= $reservationondate17['persons'] ?></td>
-                        <td><?= $reservationondate17['date'] ?></td>
-                        <td><?= $reservationondate17['time'] ?></td>
-                        <td><a href="edit.php?id=<?= htmlentities($reservationondate17['id']) ?>">Edit</a></td>
-                        <td><a href="delete.php?id=<?= htmlentities($reservationondate17['id']) ?>">Delete</a></td>
-                    </tr>
+                                <tr>
+                                    <td><?= $index + 1 ?></td>
+                                    <td><?= $reservationondate17['first_name'] ?></td>
+                                    <td><?= $reservationondate17['last_name'] ?></td>
+                                    <td><?= $reservationondate17['persons'] ?></td>
+                                    <td><?= $reservationondate17['date'] ?></td>
+                                    <td><?= $reservationondate17['time'] ?></td>
+                                    <td><a href="edit.php?id=<?= htmlentities($reservationondate17['id']) ?>">Edit</a></td>
+                                    <td><a href="delete.php?id=<?= htmlentities($reservationondate17['id']) ?>">Delete</a></td>
+                                </tr>
                 <?php } ?>
                 </tbody>
             </table>
         </div>
 
-        <button class="collapsible"> 18:00      aantal mensen: <?= $totalp18 ?>     aantal groepen: <?=$totalg18?>   </button>
+        <button class="collapsible"> 18:00      aantal mensen: <?= $totalp18 ?>     aantal groepen: <?= $totalg18 ?>   </button>
         <div class="content">
             <table class="table is-striped">
                 <thead>
@@ -640,22 +667,22 @@ mysqli_close($db);
 
 
                 <?php foreach ($reservationlist18 as $index => $reservationondate18) { ?>
-                    <tr>
-                        <td><?= $index + 1 ?></td>
-                        <td><?= $reservationondate18['first_name'] ?></td>
-                        <td><?= $reservationondate18['last_name'] ?></td>
-                        <td><?= $reservationondate18['persons'] ?></td>
-                        <td><?= $reservationondate18['date'] ?></td>
-                        <td><?= $reservationondate18['time'] ?></td>
-                        <td><a href="edit.php?id=<?= htmlentities($reservationondate18['id']) ?>">Edit</a></td>
-                        <td><a href="delete.php?id=<?= htmlentities($reservationondate18['id']) ?>">Delete</a></td>
-                    </tr>
+                                <tr>
+                                    <td><?= $index + 1 ?></td>
+                                    <td><?= $reservationondate18['first_name'] ?></td>
+                                    <td><?= $reservationondate18['last_name'] ?></td>
+                                    <td><?= $reservationondate18['persons'] ?></td>
+                                    <td><?= $reservationondate18['date'] ?></td>
+                                    <td><?= $reservationondate18['time'] ?></td>
+                                    <td><a href="edit.php?id=<?= htmlentities($reservationondate18['id']) ?>">Edit</a></td>
+                                    <td><a href="delete.php?id=<?= htmlentities($reservationondate18['id']) ?>">Delete</a></td>
+                                </tr>
                 <?php } ?>
                 </tbody>
             </table>
         </div>
 
-        <button class="collapsible"> 19:00      aantal mensen: <?= $totalp19 ?>     aantal groepen: <?=$totalg19?>   </button>
+        <button class="collapsible"> 19:00      aantal mensen: <?= $totalp19 ?>     aantal groepen: <?= $totalg19 ?>   </button>
         <div class="content">
             <table class="table is-striped">
                 <thead>
@@ -679,22 +706,22 @@ mysqli_close($db);
 
 
                 <?php foreach ($reservationlist19 as $index => $reservationondate19) { ?>
-                    <tr>
-                        <td><?= $index + 1 ?></td>
-                        <td><?= $reservationondate19['first_name'] ?></td>
-                        <td><?= $reservationondate19['last_name'] ?></td>
-                        <td><?= $reservationondate19['persons'] ?></td>
-                        <td><?= $reservationondate19['date'] ?></td>
-                        <td><?= $reservationondate19['time'] ?></td>
-                        <td><a href="edit.php?id=<?= htmlentities($reservationondate19['id']) ?>">Edit</a></td>
-                        <td><a href="delete.php?id=<?= htmlentities($reservationondate19['id']) ?>">Delete</a></td>
-                    </tr>
+                                <tr>
+                                    <td><?= $index + 1 ?></td>
+                                    <td><?= $reservationondate19['first_name'] ?></td>
+                                    <td><?= $reservationondate19['last_name'] ?></td>
+                                    <td><?= $reservationondate19['persons'] ?></td>
+                                    <td><?= $reservationondate19['date'] ?></td>
+                                    <td><?= $reservationondate19['time'] ?></td>
+                                    <td><a href="edit.php?id=<?= htmlentities($reservationondate19['id']) ?>">Edit</a></td>
+                                    <td><a href="delete.php?id=<?= htmlentities($reservationondate19['id']) ?>">Delete</a></td>
+                                </tr>
                 <?php } ?>
                 </tbody>
             </table>
         </div>
 
-        <button class="collapsible"> 20:00      aantal mensen: <?= $totalp20 ?>     aantal groepen: <?=$totalg20?>   </button>
+        <button class="collapsible"> 20:00      aantal mensen: <?= $totalp20 ?>     aantal groepen: <?= $totalg20 ?>   </button>
         <div class="content">
             <table class="table is-striped">
                 <thead>
@@ -718,22 +745,22 @@ mysqli_close($db);
 
 
                 <?php foreach ($reservationlist20 as $index => $reservationondate20) { ?>
-                    <tr>
-                        <td><?= $index + 1 ?></td>
-                        <td><?= $reservationondate20['first_name'] ?></td>
-                        <td><?= $reservationondate20['last_name'] ?></td>
-                        <td><?= $reservationondate20['persons'] ?></td>
-                        <td><?= $reservationondate20['date'] ?></td>
-                        <td><?= $reservationondate20['time'] ?></td>
-                        <td><a href="edit.php?id=<?= htmlentities($reservationondate20['id']) ?>">Edit</a></td>
-                        <td><a href="delete.php?id=<?= htmlentities($reservationondate20['id']) ?>">Delete</a></td>
-                    </tr>
+                                <tr>
+                                    <td><?= $index + 1 ?></td>
+                                    <td><?= $reservationondate20['first_name'] ?></td>
+                                    <td><?= $reservationondate20['last_name'] ?></td>
+                                    <td><?= $reservationondate20['persons'] ?></td>
+                                    <td><?= $reservationondate20['date'] ?></td>
+                                    <td><?= $reservationondate20['time'] ?></td>
+                                    <td><a href="edit.php?id=<?= htmlentities($reservationondate20['id']) ?>">Edit</a></td>
+                                    <td><a href="delete.php?id=<?= htmlentities($reservationondate20['id']) ?>">Delete</a></td>
+                                </tr>
                 <?php } ?>
                 </tbody>
             </table>
         </div>
 
-        <button class="collapsible"> 21:00      aantal mensen: <?= $totalp21 ?>     aantal groepen: <?=$totalg21?></button>
+        <button class="collapsible"> 21:00      aantal mensen: <?= $totalp21 ?>     aantal groepen: <?= $totalg21 ?></button>
         <div class="content">
             <table class="table is-striped">
                 <thead>
@@ -757,22 +784,22 @@ mysqli_close($db);
 
 
                 <?php foreach ($reservationlist21 as $index => $reservationondate21) { ?>
-                    <tr>
-                        <td><?= $index + 1 ?></td>
-                        <td><?= $reservationondate21['first_name'] ?></td>
-                        <td><?= $reservationondate21['last_name'] ?></td>
-                        <td><?= $reservationondate21['persons'] ?></td>
-                        <td><?= $reservationondate21['date'] ?></td>
-                        <td><?= $reservationondate21['time'] ?></td>
-                        <td><a href="edit.php?id=<?= htmlentities($reservationondate21['id']) ?>">Edit</a></td>
-                        <td><a href="delete.php?id=<?= htmlentities($reservationondate21['id']) ?>">Delete</a></td>
-                    </tr>
+                                <tr>
+                                    <td><?= $index + 1 ?></td>
+                                    <td><?= $reservationondate21['first_name'] ?></td>
+                                    <td><?= $reservationondate21['last_name'] ?></td>
+                                    <td><?= $reservationondate21['persons'] ?></td>
+                                    <td><?= $reservationondate21['date'] ?></td>
+                                    <td><?= $reservationondate21['time'] ?></td>
+                                    <td><a href="edit.php?id=<?= htmlentities($reservationondate21['id']) ?>">Edit</a></td>
+                                    <td><a href="delete.php?id=<?= htmlentities($reservationondate21['id']) ?>">Delete</a></td>
+                                </tr>
                 <?php } ?>
                 </tbody>
             </table>
         </div>
 
-        <button class="collapsible"> 22:00      aantal mensen: <?= $totalp22 ?>     aantal groepen: <?=$totalg22?></button>
+        <button class="collapsible"> 22:00      aantal mensen: <?= $totalp22 ?>     aantal groepen: <?= $totalg22 ?></button>
         <div class="content">
             <table class="table is-striped">
                 <thead>
@@ -796,16 +823,16 @@ mysqli_close($db);
 
 
                 <?php foreach ($reservationlist22 as $index => $reservationondate22) { ?>
-                    <tr>
-                        <td><?= $index + 1 ?></td>
-                        <td><?= $reservationondate22['first_name'] ?></td>
-                        <td><?= $reservationondate22['last_name'] ?></td>
-                        <td><?= $reservationondate22['persons'] ?></td>
-                        <td><?= $reservationondate22['date'] ?></td>
-                        <td><?= $reservationondate22['time'] ?></td>
-                        <td><a href="edit.php?id=<?= htmlentities($reservationondate22['id']) ?>">Edit</a></td>
-                        <td><a href="delete.php?id=<?= htmlentities($reservationondate22['id']) ?>">Delete</a></td>
-                    </tr>
+                                <tr>
+                                    <td><?= $index + 1 ?></td>
+                                    <td><?= $reservationondate22['first_name'] ?></td>
+                                    <td><?= $reservationondate22['last_name'] ?></td>
+                                    <td><?= $reservationondate22['persons'] ?></td>
+                                    <td><?= $reservationondate22['date'] ?></td>
+                                    <td><?= $reservationondate22['time'] ?></td>
+                                    <td><a href="edit.php?id=<?= htmlentities($reservationondate22['id']) ?>">Edit</a></td>
+                                    <td><a href="delete.php?id=<?= htmlentities($reservationondate22['id']) ?>">Delete</a></td>
+                                </tr>
                 <?php } ?>
                 </tbody>
             </table>
