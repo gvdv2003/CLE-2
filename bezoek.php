@@ -153,7 +153,9 @@ if (isset($_POST['submit'])) {
 
 
 
-
+<header>
+    
+</header>
 
 
 
@@ -162,7 +164,7 @@ if (isset($_POST['submit'])) {
 
 
 
-    <h2>Reserveer</h2>
+    <h2>Plan je bezoek</h2>
 
     <?= $reservation ?? '' ?>
     <form action="" method="post">
