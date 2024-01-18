@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <style>
@@ -12,7 +13,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
