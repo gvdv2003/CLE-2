@@ -164,11 +164,11 @@ h4 {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #202959;
+    background-color: #313E86;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
     z-index: 1;
+    padding: 0 5px;
   }
   
   .dropdown:hover .dropdown-content {
@@ -276,3 +276,6 @@ footer section {
     gap: 30px;
 }
 
+table, th, td {
+    border: 1px solid black;
+}
