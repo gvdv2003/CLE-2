@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
 input[type=text], select, textarea {
@@ -36,7 +35,7 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: ;
   padding: 20px;
 }
 </style>

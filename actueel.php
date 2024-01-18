@@ -89,20 +89,69 @@
     </header>
 
     <main>
-        <h1>dit is h1</h1>
-        <h2>dit is h2</h2>
-        <h3>dit is h3</h3>
-        <h4>dit is h4</h4>
-        <p>asdkjhasda
-        dsa
-        sd
-        as
-        das
-        d
-        asdsd
-        a</p>
+        <article>
+            <h1>Actueel</h1>
+            <h2>Vacatures bij Cube</h2>
+            <p>Vrijdag 1 september
+    Wij waren zijn op zoek naar collega's. Dit was is jouw kans om bij het fantastische Cube team te horen:</p>
+            <h3>Schoonmaker:</h3>
+            <p>Zoek jij een leuke (bij)baan voor in de ochtend uurtjes? Kom helpen onze bouldergym schoon en fris te houden. Zie jij graag direct resultaat in je werk en vind je het heerlijk om fysiek bezig te zijn, dan ben jij de ideale kandidaat. is dat mooi meegenomen.</p>
+            <p>Daarnaast houden we ook altijd onze ogen open voor boulderbouwers en  (jeugd)trainers. Ook een open solicitatie sturen mag altijd, wie weet.</p>
+        </article>
+        
+        <article>
+            <h2>ICE CUBES 2023 | Saturday July 1st</h2>
+            <p>Our coolest bouldering event of the year!</p>
+            <p>Ice Cubes is our big summer event full of beautiful boulders (of all levels), special holds, spectacular finals and a wild cocktail party.</p>
+            <p>For you that means: During the day hard bouldering on 60 of the most beautiful boulders, and in the evening watching a spectacular final while sipping a cocktail</p>
+        </article>
+        
+        <article>
+            <h3>ICE CUBES:</h3>
+            <p>The coolest boulder event.</p>
+            <p>We reset the entire gym.</p>
+            <p>60 boulder problems. Quality, not quantity.</p>
+            <p>Level 4 - 7c (More than half of the problems will be 6A or easier)</p>
+            <p>Spectacular Finals.</p>
+            <p>Community Vibes.</p>
+            <p>Big cocktail party. </p>
 
+            <p>We will invite some of the the best setters from the Netherlands and Germany to so set their best boulders possible.
+
+                All the walls will be stripped of all other holds. We will have lots of volumes and a whole batch of new holds to work with.
+
+                The event will conclude with a cocktail party and a spectacular final where the best climbers will "show" what they're made of.</p>
+        
+            <h3>Program Saturday July 1st</h3>
+            <p>12:00 Gym Open & Start Competition</p>
+            <p>18:00 End Qualification</p>
+            <p>18:00 Dinner</p>
+            <p>19:30 Finals</p>
+            <p>21:00 Result & Award Ceremony</p>
+            <p>21:30 Cocktail party</p>
+
+            <h3>Participation</h3>
+            <p>Participation is possible for ages 6 and up, but the boulders are tailored for adults.
+    Entrance fee is € 17,50  Cube members pay €12,50. Spectators have free entry.
+    The entrance fee includes your participation and an Ice Cubes shirt</p>
+
+            <h3>Categories</h3>
+            <p>We'll have 2 categories: Male and Female, which will have their final.
+    We will also announce the winners in the youth (< 18) and veterans (40+) categories before the finals. Youth and veterans automatically take part in the adult category so they can take part in the final if they're good enough.</p>
+
+            <h3>Prizes</h3>
+            <p>We’ll hold a big raffle with plenty of prizes for all our participants.
+    The winners will receive the -infamous- Ice Cubes Trophy.</p>
+
+            <h3>Dinner</h3>
+            <p>The people from Tankstation will provide a delicious Vegetarian/Vegan dinner for € 12,00.</p>
+
+            <h3>Registration</h3>
+            <p>Please register before June 25th so that we can guarantee a shirt and dinner.
+        </article>
+</p>
     </main>
+
 
     <footer>
         <section>
