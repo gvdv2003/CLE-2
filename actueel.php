@@ -98,14 +98,14 @@
             <p>Zoek jij een leuke (bij)baan voor in de ochtend uurtjes? Kom helpen onze bouldergym schoon en fris te houden. Zie jij graag direct resultaat in je werk en vind je het heerlijk om fysiek bezig te zijn, dan ben jij de ideale kandidaat. is dat mooi meegenomen.</p>
             <p>Daarnaast houden we ook altijd onze ogen open voor boulderbouwers en  (jeugd)trainers. Ook een open solicitatie sturen mag altijd, wie weet.</p>
         </article>
-        
+        <hr style="width:100%;text-align:left;margin-left:0">
         <article>
             <h2>ICE CUBES 2023 | Saturday July 1st</h2>
             <p>Our coolest bouldering event of the year!</p>
             <p>Ice Cubes is our big summer event full of beautiful boulders (of all levels), special holds, spectacular finals and a wild cocktail party.</p>
             <p>For you that means: During the day hard bouldering on 60 of the most beautiful boulders, and in the evening watching a spectacular final while sipping a cocktail</p>
         </article>
-        
+        <hr style="width:100%;text-align:left;margin-left:0">
         <article>
             <h3>ICE CUBES:</h3>
             <p>The coolest boulder event.</p>
