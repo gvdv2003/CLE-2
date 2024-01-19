@@ -202,9 +202,9 @@ header {
 
 
     background-image: url(../images/cube_background.png);
-    object-fit:fill;
+    object-fit:cover;
     background-position: right;
-    background-repeat: none;
+    background-repeat: no-repeat;
 
     display: flex;
     flex-direction: column;
@@ -300,15 +300,16 @@ footer section {
 /* style for bezoek-form */
 
 button {
-    padding: 0;
+    padding: 5px;
     border: none;
     background: none;
-}
-
-.confirm {
     border: solid 1px black ;
     border-radius: 3px ;
     background: #F28705;
+}
+
+.confirm {
+
 }
 
 {box-sizing: border-box;}
@@ -379,4 +380,4 @@ button {
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
-}
+} 
