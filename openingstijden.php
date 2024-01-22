@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Openingstijden</title>
 </head>
 <style>
-table, th, td {
-  border:1px solid black;
-  }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
 </style>
 <div class=container>
     <nav class=sidenav>
@@ -78,7 +93,7 @@ table, th, td {
 
     <header>
             <div>
-                <h1>Trainingen</h1>
+                <h1>Openingstijden</h1>
             </div>
         </header>
 
@@ -127,9 +142,9 @@ table, th, td {
             </tr>
         </table>
         <h2>Afwijkende openingstijden 2024</h2>
-        <h3>Tijdens de feestdagen hanteren we soms aangepaste openingstijden. Deze staan hieronder vermeld. Op de niet vermelde dagen gelden de reguliere openingstijden.</h3>
+        <p>Tijdens de feestdagen hanteren we soms aangepaste openingstijden. Deze staan hieronder vermeld. Op de niet vermelde dagen gelden de reguliere openingstijden.</p>
 
-        <h3>Wij organiseren soms evenementen waarbij alleen deelnemers toegang hebben tot de klimwanden. Niet deelnemers kunnen op dat moment niet boulderen. Soms is dat een deel van de dag, soms de hele dag. Publiek is altijd gratis welkom bij deze evenementen.</h3>
+        <p>Wij organiseren soms evenementen waarbij alleen deelnemers toegang hebben tot de klimwanden. Niet deelnemers kunnen op dat moment niet boulderen. Soms is dat een deel van de dag, soms de hele dag. Publiek is altijd gratis welkom bij deze evenementen.</p>
         <table style="width:30%">
             <tr>
                 <th>Dag</th>
