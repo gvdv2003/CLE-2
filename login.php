@@ -42,6 +42,8 @@ if (isset($_POST['submit'])) {
 
                 // Credentials not valid
             }else{
+
+
                 //error incorrect log in
                 $errors['loginFailed'] = 'onjuist';
             }
