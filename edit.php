@@ -80,8 +80,8 @@ mysqli_close($db);
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
 
     <title>re - Create</title>
 </head>
@@ -243,12 +243,12 @@ mysqli_close($db);
 
             <section class="columns is-centered">
                 <div class="column is-10">
-                    <h2 class="title mt-4">Reservering </h2>
+                    <h1>Reservering aanpassen</h1>
                     <form class="column is-6" action="" method="post">
 
                         <div class="field is-horizontal">
                             <div class="field-label is-normal">
-                                <label class="label" for="Title">voornaam</label>
+                                <label class="label" for="Title">Voornaam</label>
                             </div>
                             <div class="field-body">
                                 <div class="field">
@@ -268,7 +268,7 @@ mysqli_close($db);
                         </div>
                         <div class="field is-horizontal">
                             <div class="field-label is-normal">
-                                <label class="label" for="author">achternaam</label>
+                                <label class="label" for="author">Achternaam</label>
                             </div>
                             <div class="field-body">
                                 <div class="field">
@@ -288,7 +288,7 @@ mysqli_close($db);
                         </div>
                         <div class="field is-horizontal">
                             <div class="field-label is-normal">
-                                <label class="label" for="year">personen</label>
+                                <label class="label" for="year">Personen</label>
                             </div>
                             <div class="field-body">
                                 <div class="field">
@@ -308,7 +308,7 @@ mysqli_close($db);
                         </div>
                         <div class="field is-horizontal">
                             <div class="field-label is-normal">
-                                <label class="label" for="genre">datum</label>
+                                <label class="label" for="genre">Datum</label>
                             </div>
                             <div class="field-body">
                                 <div class="field">
@@ -328,7 +328,7 @@ mysqli_close($db);
                         </div>
                         <div class="field is-horizontal">
                             <div class="field-label is-normal">
-                                <label class="label" for="pages">time</label>
+                                <label class="label" for="pages">Tijd</label>
                             </div>
                             <div class="field-body">
                                 <div class="field">

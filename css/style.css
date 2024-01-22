@@ -62,7 +62,7 @@ h4 {
 }
 
 .sidenav div {
-    margin-top: 2vh;    
+    margin-top: 2vh;
 }
 
 .logo {
@@ -75,14 +75,12 @@ h4 {
 
 }
 
-.sidenav p{
+.sidenav p {
     color: #f1f1f1;
     font-weight: lighter;
 }
 
-.login {
-
-}
+.login {}
 
 
 
@@ -93,10 +91,10 @@ h4 {
     align-items: center;
     align-content: center;
 
-    
+
 }
 
-.login svg{
+.login svg {
     height: 50px;
     width: 50px;
 }
@@ -122,28 +120,28 @@ h4 {
     justify-content: space-between;
 
 
-    
+
 }
 
 
-.sidenavContainer section{
+.sidenavContainer section {
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: center;
 
-    
+
 }
 
-.sidenavContainer section div{
+.sidenavContainer section div {
     border-radius: 5px;
     padding: 10px;
-    
+
 }
 
-.sidenavContainer section div:hover{
+.sidenavContainer section div:hover {
     background-color: #232D67;
-    
+
 }
 
 
@@ -151,7 +149,7 @@ h4 {
     color: #f2f2f2;
     font-size: 1.2rem;
     width: 100%;
-    
+
 
 }
 
@@ -159,28 +157,28 @@ h4 {
 .sidenav h2 {
     color: #f2f2f2;
     font-size: 1.2rem;
- 
+
 }
 
 
 .dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #313E86;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 0 5px;
-  }
-  
-  .dropdown:hover .dropdown-content {
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+}
 
 
 
@@ -196,8 +194,8 @@ h4 {
 header {
 
     height: 200px;
-   width: 100%;
-    
+    width: 100%;
+
 
 
     background-image: url(../images/cube_background.png);
@@ -222,14 +220,17 @@ main {
     display: flex;
     flex-direction: column;
     margin-left: 200px;
-   padding: 50px 0;
+    padding: 50px 0;
 
 
     width: 65vw;
 
-
-    
 }
+
+main h1 {
+    color: #202959;
+}
+
 
 .containerMain {
 
@@ -237,7 +238,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: end;
-    
+
 }
 
 
@@ -257,7 +258,8 @@ main {
 
 }
 
-.active, .collapsible:hover {
+.active,
+.collapsible:hover {
     background-color: #f2f2f2;
     border: solid 1px #202959;
 }
@@ -303,81 +305,146 @@ button {
     padding: 5px;
     border: none;
     background: none;
-    border: solid 1px black ;
-    border-radius: 3px ;
+    border: solid 1px black;
+    border-radius: 3px;
     background: #F28705;
+    color: white;
 }
 
-.confirm {
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+
+.dateTimeContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 350px;
+}
+
+
+select[type="time"] {
+    flex: 1;
+    border: none;
+    padding: 5px;
+
+    background-color:#f2f2f2;
+}
+
+select[type="time"]:focus {
+    outline: none;
 
 }
+
+
+
+select[type="time"] option {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 3px;
+
+
+}
+
+select[type="time"] option:hover {
+    background-color: #E5E5E5;
+}
+
+select[type="time"] option:checked {
+    border: #202959 solid 1px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 0px black;    
+}
+
+
+
+label {
+    display: flex;
+}
+
+
+
+label div {
+    flex: 1;
+    height: 30px;
+
+
+}
+
+label input {
+    flex: 1;
+
+
+    padding-left: 1rem;
+}
+
+
+
+
+
+
+
 
 {box-sizing: border-box;}
 
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
-}
+
 
 /* The popup form - hidden by default */
 .form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
+  display: flex;
+  position:absolute;
+  
+  right: 150px;
+
   z-index: 9;
 }
 
 /* Add styles to the form container */
 .form-container {
   max-width: 300px;
-  padding: 10px;
+  padding: 30px 30px 50px 30px;
+  border: #202959 solid 1px ; 
+  border-radius: 10px;
   background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  color: #202959;
 }
 
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
+.form-container h2 {
+    margin-bottom: 0;
+    padding-bottom: 0;;
 }
 
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
 
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
+
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
   background-color: red;
+  width: 25px;
+  height: 25px;
+  align-self: flex-end;
 }
+
+.confirm {
+    margin-top:20px;
+}
+
 
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
-} 
+}

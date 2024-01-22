@@ -265,6 +265,17 @@ if (isset($_POST['submit'])) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
         <main>
 
 
@@ -275,87 +286,60 @@ if (isset($_POST['submit'])) {
 
 
 
-                <label for="first_name">
-                    Voornaam:
-                    <input type="text" id="first_name" name="first_name" value="<?= htmlentities($first_name) ?>" />
-                    <p class="help is-danger">
-                        <?= $errors['first_name'] ?? '' ?>
-                    </p>
-                </label>
+                <div class=dateTimeContainer>
+                    <label for="date">
+
+                        <input type="date" id="date" name="date" min=<?= $currentdate ?>
+                            value="<?= htmlentities($date) ?>" />
+                        <p class="help is-danger">
+                            <?= $errors['date'] ?? '' ?>
+                        </p>
+                    </label>
+
+
+
+                    <label for="time">
+
+
+                        <select type="time" id="time" name="time" value="<?= htmlentities($time) ?>" size="6">
+                            <option onclick="openForm()" value="10:00">10:00</option>
+                            <option onclick="openForm()" value="11:00">11:00</option>
+                            <option onclick="openForm()" value="12:00">12:00</option>
+                            <option onclick="openForm()" value="13:00">13:00</option>
+                            <option onclick="openForm()" value="14:00">14:00</option>
+                            <option onclick="openForm()" value="15:00">15:00</option>
+                            <option onclick="openForm()" value="16:00">16:00</option>
+                            <option onclick="openForm()" value="17:00">17:00</option>
+                            <option onclick="openForm()" value="18:00">18:00</option>
+                            <option onclick="openForm()" value="19:00">19:00</option>
+                            <option onclick="openForm()" value="20:00">20:00</option>
+                            <option onclick="openForm()" value="21:00">21:00</option>
+                            <option onclick="openForm()" value="22:00">22:00</option>
+
+                            <?= $errors['time'] ?? '' ?>
+
+                        </select>
+                    </label>
+                </div>
 
 
 
 
 
-                <label for="last_name">
-                    Achternaam:
-                    <input type="text" id="last_name" name="last_name" value="<?= htmlentities($last_name) ?>" />
-                    <p class="help is-danger">
-                        <?= $errors['last_name'] ?? '' ?>
-                    </p>
-                </label>
-
-
-
-
-                <label for="persons">aantal personen:
-                    <select type="persons" id="persons" name="persons" value="<?= htmlentities($persons) ?>">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-
-                        <?= $errors['persons'] ?? '' ?>
-                </label>
-
-
-
-
-                <label for="date">
-                    Datum:
-                    <input type="date" id="date" name="date" min=<?= $currentdate ?>
-                        value="<?= htmlentities($date) ?>" />
-                    <p class="help is-danger">
-                        <?= $errors['date'] ?? '' ?>
-                    </p>
-                </label>
-
-
-
-
-                <label for="time">Tijd:</label>
-                <select type="time" id="time" name="time" value="<?= htmlentities($time) ?>" size = "6">
-                    <option value="10:00">10:00</option>
-                    <option value="11:00">11:00</option>
-                    <option value="12:00">12:00</option>
-                    <option value="13:00">13:00</option>
-                    <option value="14:00">14:00</option>
-                    <option value="15:00">15:00</option>
-                    <option value="16:00">16:00</option>
-                    <option value="17:00">17:00</option>
-                    <option value="18:00">18:00</option>
-                    <option value="19:00">19:00</option>
-                    <option value="20:00">20:00</option>
-                    <option value="21:00">21:00</option>
-                    <option value="22:00">22:00</option>
-
-                    <?= $errors['time'] ?? '' ?>
-
-                </select>
 
 
 
 
 
-                <button class=confirm type="submit" name="submit">submit</button>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -363,40 +347,170 @@ if (isset($_POST['submit'])) {
 
             </form>
             <p>
-            <?= $worked ?? '' ?>
+                <?= $worked ?? '' ?>
             </p>
 
             <p><i>Voor groepen groter dan 12, neem contact op</i></p>
 
 
-            <!-- A button to open the popup form -->
-            <button class="open-button" onclick="openForm()">Open Form</button>
+
+
 
             <!-- The form -->
             <div class="form-popup" id="myForm">
-
-
-            /*asdasdasdasd*/
-
                 <form action="/action_page.php" class="form-container">
 
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+
+                <button type="button" class="btn cancel" onclick="closeForm()">X</button>
+
+
+
+                        <h2>Kies je aankomsttijd</h2>
+                        <h4>Boek gratis</h4>
+                    <label for="first_name">
+                        <div>Voornaam</div>
+                        <input type="text" id="first_name" name="first_name" value="<?= htmlentities($first_name) ?>" />
+                        <p class="help is-danger">
+                            <?= $errors['first_name'] ?? '' ?>
+                        </p>
+                    </label>
+
+
+
+
+
+                    <label for="last_name">
+                        <div>Achternaam</div>
+                        <input type="text" id="last_name" name="last_name" value="<?= htmlentities($last_name) ?>" />
+                        <p class="help is-danger">
+                            <?= $errors['last_name'] ?? '' ?>
+                        </p>
+                    </label>
+
+
+
+                       
+                    <label for="persons">
+                        <div>Aantal personen:</div>
+                        <select type="persons" id="persons" name="persons" value="<?= htmlentities($persons) ?>">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+
+                            <?= $errors['persons'] ?? '' ?>
+                        </select>
+                    </label>
+
+
+
+
+
+
+
+
+
+
+
+                    <button class=confirm type="submit" name="submit">submit</button>
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+                    
                 </form>
             </div>
+
+
+
+
+
+
+
+
+
 
 
         </main>
 
 
-<script>
-    function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+        </script>
+
+
+
+
+
+
+
+        <footer>
+            <section>
+                <div>
+                    <a href="">
+                        <p>Huisregels</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <p>Algemene voorwaarden</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <p>Privacyverklaring</p>
+                    </a>
+                </div>
+            </section>
+            <div>
+                <p>©2023 Cube Bouldergym</p>
+            </div>
+
+        </footer>
 
 </body>
 

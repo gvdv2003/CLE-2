@@ -47,7 +47,6 @@ mysqli_close($db);
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title> details reservering </title>
@@ -206,7 +205,7 @@ mysqli_close($db);
                     <h2 class="title mt-4">
                         <?= $reservation['first_name'] . ' ' . $reservation['last_name'] ?>
                     </h2>
-                    <section class="content">
+                    <section class="contentDelete">
                         <ul>
                             <li>voornaam:
                                 <?= $reservation['first_name'] ?>
