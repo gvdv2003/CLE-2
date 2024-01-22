@@ -23,6 +23,8 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
+
+
 </style>
 <div class=container>
     <nav class=sidenav>
@@ -91,7 +93,7 @@ tr:nth-child(even) {
 
     <header>
             <div>
-                <h1>Trainingen</h1>
+                <h1>Openingstijden</h1>
             </div>
         </header>
 

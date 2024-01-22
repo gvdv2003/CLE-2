@@ -11,6 +11,19 @@
     <title>Home</title>
 </head>
 
+<style>
+    .home_h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10vw;
+    }
+
+    header {
+    height: 400px;
+    width: 100%;
+    }
+</style>
 
 <div class=container>
     <nav class=sidenav>
@@ -78,13 +91,13 @@
 
 
     <header>
-            <div>
-                <h1>Trainingen</h1>
+            <div class="home_h1">
+                <h1 >CUBE Boulderen</h1>
             </div>
         </header>
 
     <main>
-            <h2>Cursussen & Trainingen</h2>
+            <h2 class="home_h1">Welkom bij CUBE Boulderen!</h2>
             <h3 >We hebben een uitgebreid aanbod aan trainingen om je op weg te helpen, je beter te leren boulderen en om je fit en blessurevrij te houden.</h3>
             <p>Jeugdtrainingen</p>
             <p>Introductielessen en introductiecursussen</p>

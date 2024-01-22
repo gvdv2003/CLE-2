@@ -12,7 +12,9 @@
 <body>
 
 <style>
-    
+    .pagina-links {
+        text-decoration: underline;  
+    }
 </style>
 
 <div class=container>
@@ -103,7 +105,7 @@
             <p>Bij deze 4 weekse cursus leg je de perfecte basis om zelfstandig te boulderen. Naast de spelregels en de veiligheidsregels krijg je een flinke hoeveelheid technieken te zien. In 4 weken kunnen we geen wereldtopper van je maken maar na de cursus ben je er klaar voor om zelfstandig aan de slag te gaan en weet je genoeg om de boulders aan te vallen en de (bewegings) puzzels op te lossen. De cursus is op maandagavond 19.30 - 21.00 uur.</p>
             <h3>Gratis Walk-ins</h3>
             <h4>Fysio Walk In</h4>
-            <p>Elke woensdag hebben we een fysio spreekuur van 19:00 tot 19:30 met Mike Jansen van https://www.xperthandtherapie.nl/, waar je terecht kunt voor vragen, behandeling van blessures, sportmedisch onderzoek én trainingsadvies. Gratis intake en en zonder afspraak. Dus heb je last van pijntjes? Loop er niet mee verder en kom langs, ongetwijfeld heeft mike je zo weer topfit.
+            <p>Elke woensdag hebben we een fysio spreekuur van 19:00 tot 19:30 met Mike Jansen van <a href="https://www.xperthandtherapie.nl/" class="pagina-links">https://www.xperthandtherapie.nl/</a>, waar je terecht kunt voor vragen, behandeling van blessures, sportmedisch onderzoek én trainingsadvies. Gratis intake en en zonder afspraak. Dus heb je last van pijntjes? Loop er niet mee verder en kom langs, ongetwijfeld heeft mike je zo weer topfit.
                 Woensdags van 19:00 tot 19:30. Op de dag zelf even melden bij de bar.</p>
             <h4>Functional movement</h4>
             <p>De belasting bij boulderen is redelijk eenzijdig. Het is daarom goed om wat aanvullende oefeningen te doen om je lichaam fit en blessurevrij te houden.

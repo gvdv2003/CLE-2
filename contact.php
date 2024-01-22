@@ -12,7 +12,7 @@
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid black;
+  border: 1px solid #dddddd;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -39,17 +39,13 @@ input[type=submit]:hover {
   padding: 20px;
   border-radius: 5px;
 }
-.contact_links {
-  color: blue;
+
+.pagina-links {
+    text-decoration: underline;  
 }
 
 </style>
 <body>
-
-<style>
-    
-</style>
-
 <div class=container>
     <nav class=sidenav>
         <svg class=logo id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187.39 42.28"><defs><style>.cls-1,.cls-2,.cls-3{fill:none;stroke-width:2px;}.cls-1{stroke:#978d65;}.cls-2{stroke:#88552c;}.cls-3{stroke:#2d5391;}.cls-4{fill:#f18f00;}.cls-5{fill:#3c8aca;}.cls-6{fill:#f2f2f2;}.cls-7{fill:#1e1b58;}</style></defs><title>logo</title><path class="cls-1" d="M175.7,6.2l-5.9,2.88" transform="translate(-4.68 -1.26)"/><path class="cls-2" d="M166.52,10.7l-8.15,2.86" transform="translate(-4.68 -1.26)"/><path class="cls-3" d="M172.62,12.84a6.47,6.47,0,0,1-2.84-1.9" transform="translate(-4.68 -1.26)"/><path class="cls-1" d="M178,8.27l3.21,8.07" transform="translate(-4.68 -1.26)"/><path class="cls-2" d="M180.26,18.65l-5.81,1.55" transform="translate(-4.68 -1.26)"/><path class="cls-3" d="M187.73,25.37l-4.68-6" transform="translate(-4.68 -1.26)"/><path class="cls-1" d="M166.38,18,162,23.29" transform="translate(-4.68 -1.26)"/><path class="cls-2" d="M159.17,24.73l-9.54-2" transform="translate(-4.68 -1.26)"/><path class="cls-3" d="M167.36,36.09l-5.7-9.79" transform="translate(-4.68 -1.26)"/><path class="cls-1" d="M174.27,23.57l.85,7.06" transform="translate(-4.68 -1.26)"/><path class="cls-2" d="M174.94,34.13l-3.37,9" transform="translate(-4.68 -1.26)"/><path class="cls-3" d="M185.58,29.09c-.25-.21-.44-.28-.58-.2a28.8,28.8,0,0,1-7.78,2.89" transform="translate(-4.68 -1.26)"/><path class="cls-4" d="M175.7,6.2l-5.9,2.88c-1.52-1.68-3.63-.71-3.28,1.62l-8.15,2.86L170.51,1.37a.37.37,0,0,1,.53,0h0Z" transform="translate(-4.68 -1.26)"/><path class="cls-5" d="M175.7,6.2l-3.08,6.64a6.47,6.47,0,0,1-2.84-1.9l0-1.86Z" transform="translate(-4.68 -1.26)"/><path class="cls-6" d="M15.93,14.51a3.93,3.93,0,0,0-3.84,3.6C12,20.84,12,23.67,12,26.62a4,4,0,0,0,4,3.87H32.22a.32.32,0,0,1,.36.36l0,6.39a.44.44,0,0,1-.51.5q-6.27-.16-12.93,0A18.08,18.08,0,0,1,11.4,36.7c-5.27-2.41-7-7.34-6.69-12.92.17-3.08-.37-6.11.74-9,2.24-5.91,7.07-7.68,13.26-7.51q6.76.18,13.37,0a.42.42,0,0,1,.49.48v6.48a.32.32,0,0,1-.32.32H15.93Z" transform="translate(-4.68 -1.26)"/><path class="cls-6" d="M63.07,30.49a.38.38,0,0,0,.37-.37V7.92a.56.56,0,0,1,.64-.64h6.13a.37.37,0,0,1,.42.42V37.35a.33.33,0,0,1-.33.33h0q-8,0-16.29.07-5.22,0-7.72-1.3c-4.18-2.28-6.1-6.25-6.05-11.12q.08-9.22,0-17.54a.44.44,0,0,1,.5-.5H47a.47.47,0,0,1,.47.47h0V25.87q0,4.62,4.63,4.62Z" transform="translate(-4.68 -1.26)"/><path class="cls-6" d="M106.48,23C110.74,30,106,37.76,98,37.72q-9.3-.06-19.6,0a.6.6,0,0,1-.69-.68V8a.59.59,0,0,1,.67-.67q10.55,0,20.26,0c7.84,0,11.75,8.4,7.81,14.75A.88.88,0,0,0,106.48,23ZM84.89,14.86l0,3.7a.32.32,0,0,0,.32.32l13.3-.07a2.17,2.17,0,0,0,2.29-2v-.32a2.17,2.17,0,0,0-2.31-2h0l-13.3.07A.32.32,0,0,0,84.89,14.86Zm0,11.53v3.84a.25.25,0,0,0,.25.25l13.4,0a2.14,2.14,0,0,0,2.25-2h0v-.32a2.14,2.14,0,0,0-2.25-2l-13.4,0A.25.25,0,0,0,84.92,26.39Z" transform="translate(-4.68 -1.26)"/><path class="cls-6" d="M121.74,14.51a.22.22,0,0,0-.25.25v3.85a.23.23,0,0,0,.23.23h0l16.06,0a.42.42,0,0,1,.48.48v6.52a.3.3,0,0,1-.34.34H122.78c-1.44,0-1.78.61-1,1.82l.45.72a3.6,3.6,0,0,0,3.23,1.79h18.43a.34.34,0,0,1,.38.38v6.42a.4.4,0,0,1-.47.45q-7.72-.16-15.45,0-5.3.13-8.14-1.4c-4.19-2.25-6-6.37-6-11.15q.11-9.57,0-17.62a.31.31,0,0,1,.31-.31h29.21a.42.42,0,0,1,.48.48v6.36a.34.34,0,0,1-.38.38Z" transform="translate(-4.68 -1.26)"/><path class="cls-4" d="M178,8.27l3.21,8.07a1.9,1.9,0,0,0-.91,2.31l-5.81,1.55c-.49-.18-.94-.85-1.36-2a1.08,1.08,0,0,1,.07-.91Z" transform="translate(-4.68 -1.26)"/><path class="cls-5" d="M178,8.27l14,13.89a.33.33,0,0,1,0,.52l-2.8,2.79a.91.91,0,0,1-.91.25c-.33-.09-.5-.2-.5-.35l-4.68-6c.63-.94.88-2.31-.3-2.92a2,2,0,0,0-1.58-.12Z" transform="translate(-4.68 -1.26)"/><path class="cls-7" d="M166.52,10.7a2,2,0,0,0,3.26.24,6.47,6.47,0,0,0,2.84,1.9q-3.85,1.7-5.87,1.55c-2.25-.17-5-.44-8.38-.83Z" transform="translate(-4.68 -1.26)"/><path class="cls-4" d="M166.38,18,162,23.29c-1.78-.56-2.74-.08-2.87,1.44l-9.54-2,5.93-6.28a.88.88,0,0,1,.85-.28Z" transform="translate(-4.68 -1.26)"/><path class="cls-5" d="M166.38,18a71.48,71.48,0,0,1,1,18.12l-5.7-9.79a2,2,0,0,0,.38-3Z" transform="translate(-4.68 -1.26)"/><path class="cls-7" d="M180.26,18.65a2,2,0,0,0,2.79.73l4.68,6c-3.21-1.47-6.11-3.44-9.46-4.23l-3.82-.94Z" transform="translate(-4.68 -1.26)"/><path class="cls-7" d="M149.63,22.73l9.54,2a1.71,1.71,0,0,0,2.49,1.57l5.7,9.79a3,3,0,0,1-1,2.54.47.47,0,0,1-.73,0Z" transform="translate(-4.68 -1.26)"/><path class="cls-4" d="M174.27,23.57l.85,7.06c-1.85,1.11-1.91,2.27-.18,3.5l-3.37,9q-.28.71-1.26.24a.73.73,0,0,1-.42-.67l-.21-12.29a1.86,1.86,0,0,1,.28-1l3.42-5.5a.63.63,0,0,1,.54-.32A1,1,0,0,1,174.27,23.57Z" transform="translate(-4.68 -1.26)"/><path class="cls-5" d="M174.27,23.57l11.26,4.91a.28.28,0,0,1,.17.33.57.57,0,0,1-.12.28c-.25-.21-.44-.28-.58-.2a28.8,28.8,0,0,1-7.78,2.89,2.26,2.26,0,0,0-2.1-1.15Z" transform="translate(-4.68 -1.26)"/><path class="cls-7" d="M185.58,29.09l-14,14,3.37-9a2.1,2.1,0,0,0,2-.67,1.79,1.79,0,0,0,.28-1.68A28.8,28.8,0,0,0,185,28.89C185.14,28.81,185.33,28.88,185.58,29.09Z" transform="translate(-4.68 -1.26)"/></svg>
@@ -175,7 +171,7 @@ input[type=submit]:hover {
       <p>> Koopavonden (donderdag) tot 21.00 uur;</p>
       <p>> Koopzondagen en feestdagen van 12.00 tot 19.00 uur.</p>
       <h3>Gratis parkeren?</h3>
-      <p>U kunt op de straten nabij Cube gratis parkeren buiten bovengenoemde tijden. Komt u binnen deze tijden en wilt u persé gratis parkeren dan zult u een stukje moeten lopen. Het betaald parkeren geld ook voor de gehele Hoge Bothofstraat en de direct omliggende straten, maar de straten daarachter is het parkeren gratis. De eerste gratis parkeerplaatsen zijn op nog geen 3 minuten lopen. Een overzicht van de betaald parkeren zone's vind u op het onderstaande plaatje en via op deze <a href="https://www.prettigparkeren.nl/kaart/#!Enschede//" class="contact_links">link</a></p>
+      <p>U kunt op de straten nabij Cube gratis parkeren buiten bovengenoemde tijden. Komt u binnen deze tijden en wilt u persé gratis parkeren dan zult u een stukje moeten lopen. Het betaald parkeren geld ook voor de gehele Hoge Bothofstraat en de direct omliggende straten, maar de straten daarachter is het parkeren gratis. De eerste gratis parkeerplaatsen zijn op nog geen 3 minuten lopen. Een overzicht van de betaald parkeren zone's vind u op het onderstaande plaatje en via op deze <a href="https://www.prettigparkeren.nl/kaart/#!Enschede//" class="pagina-links">link</a></p>
     </section>
 
 
