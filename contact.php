@@ -145,7 +145,7 @@ p {
             <option value="anders">Anders</option>
           </select>
 
-          <label for="subject">Onderwerp</label>
+          <label for="subject">Waar kunnen we u mee helpen?</label>
           <textarea id="subject" name="subject" placeholder="Hier kunt u schrijven.." style="height:200px"></textarea>
 
           <input type="submit" value="Submit">
