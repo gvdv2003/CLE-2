@@ -13,7 +13,7 @@
 
 <style>
     .pagina-links {
-        text-decoration: underline;  
+        text-decoration: underline;
     }
 </style>
 
