@@ -374,14 +374,14 @@ mysqli_close($db);
             <table class="table is-striped">
                 <thead>
                 <tr>
-                    <th>#</th>
-                    <th>voornaam</th>
-                    <th>achternaam</th>
-                    <th>personen</th>
-                    <th>datum</th>
-                    <th>tijd</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
+                    <th> #</th>
+                    <th> voornaam</th>
+                    <th> achternaam</th>
+                    <th> personen</th>
+                    <th> datum</th>
+                    <th> tijd</th>
+                    <th> Edit</th>
+                    <th> Delete</th>
                 </tr>
                 </thead>
                 <tfoot>

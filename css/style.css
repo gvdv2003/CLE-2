@@ -247,7 +247,7 @@ main h1 {
 
     display: flex;
     flex-direction: column;
-    align-items: end;
+    
 
 }
 
@@ -277,21 +277,36 @@ main h1 {
 
 .active,
 .collapsible:hover {
-    background-color: #f2f2f2;
+    background-color: white;
     border: solid 1px #202959;
 }
 
-
+.active,
+.collapsible:active {
+    background-color: white;
+    border: none
+}
 
 .content {
     margin: 5px;
-    padding: 0 18px;
+ 
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
+background-color: #f1f1f1;
+
+    width: 100%;
+    
+    
 }
 
+table {
+    background-color: #ffffff   ;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+
+}
 
 
 
@@ -319,7 +334,7 @@ footer section {
 /* style for bezoek-form */
 
 button {
-    padding: 5px;
+    padding: 5px 10px;
     border: none;
     background: none;
     border: solid 1px black;
