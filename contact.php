@@ -41,7 +41,12 @@ input[type=submit]:hover {
 }
 
 .pagina-links {
-    text-decoration: underline;  
+    text-decoration: underline;
+}
+
+p {
+    line-height: 150%;
+    letter-spacing: 1px;
 }
 
 </style>

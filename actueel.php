@@ -83,14 +83,14 @@
 
 
 
+
     <header>
-            <div>
-                <h1>Actueel</h1>
-            </div>
-        </header>
+        <p></p>
+    </header>
 
     <main>
         <article>
+            <h1>Actueel</h1>
             <h2>Vacatures bij Cube</h2>
             <p>Vrijdag 1 september
     Wij waren zijn op zoek naar collega's. Dit was is jouw kans om bij het fantastische Cube team te horen:</p>
