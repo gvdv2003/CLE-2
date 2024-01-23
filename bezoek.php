@@ -345,10 +345,8 @@ if (isset($_POST['submit'])) {
 
 
 
-            </form>
-            <p>
-                <?= $worked ?? '' ?>
-            </p>
+            
+
 
             <p><i>Voor groepen groter dan 12, neem contact op</i></p>
 
@@ -358,16 +356,16 @@ if (isset($_POST['submit'])) {
 
             <!-- The form -->
             <div class="form-popup" id="myForm">
-                <form action="/action_page.php" class="form-container">
+                <div class="form-container">
 
 
 
-                <button type="button" class="btn cancel" onclick="closeForm()">X</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">x</button>
 
 
 
-                        <h2>Kies je aankomsttijd</h2>
-                        <h4>Boek gratis</h4>
+                    <h2>Kies je aankomsttijd</h2>
+                    <h4>Boek gratis</h4>
                     <label for="first_name">
                         <div>Voornaam</div>
                         <input type="text" id="first_name" name="first_name" value="<?= htmlentities($first_name) ?>" />
@@ -390,7 +388,7 @@ if (isset($_POST['submit'])) {
 
 
 
-                       
+
                     <label for="persons">
                         <div>Aantal personen:</div>
                         <select type="persons" id="persons" name="persons" value="<?= htmlentities($persons) ?>">
@@ -434,12 +432,18 @@ if (isset($_POST['submit'])) {
 
 
 
-                    
-                    
-                </form>
+
+
+                </div>
+
+                <p>
+                    <?= $worked ?? '' ?>
+                </p>
+
+
             </div>
 
-
+            </form>
 
 
 
