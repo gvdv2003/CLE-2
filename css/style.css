@@ -12,6 +12,8 @@ body {
 
 p {
     color: #202959;
+    line-height: 150%;
+    letter-spacing: 1px;
 }
 
 a {
@@ -23,21 +25,29 @@ a {
 h1 {
     font-family: 'Roboto Condensed', sans-serif;
     color: #f1f1f1;
+    line-height: 150%;
+    letter-spacing: 1px;
 }
 
 h2 {
     font-family: 'Roboto Flex', sans-serif;
     color: #202959;
+    line-height: 150%;
+    letter-spacing: 1px;
 }
 
 h3 {
     font-family: 'Roboto Flex', sans-serif;
     color: #202959;
+    line-height: 150%;
+    letter-spacing: 1px;
 }
 
 h4 {
     font-family: 'Roboto Flex', sans-serif;
     color: #202959;
+    line-height: 150%;
+    letter-spacing: 1px;
 }
 
 
@@ -331,6 +341,11 @@ form {
 }
 
 
+input[type="date"] {
+    margin: 0px 20px 0px 5px;
+}
+
+
 select[type="time"] {
     flex: 1;
     border: none;
@@ -351,9 +366,20 @@ select[type="time"] option {
     margin-bottom: 10px;
     background-color: white;
     border-radius: 3px;
+    text-align: right;
+    color: #202959;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
+
+
+
+
+
+
 
 select[type="time"] option:hover {
     background-color: #E5E5E5;
