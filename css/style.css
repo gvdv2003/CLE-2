@@ -13,7 +13,7 @@ body {
 p {
     color: #202959;
     line-height: 150%;
-    letter-spacing: 1px;
+
 }
 
 a {
@@ -251,6 +251,13 @@ main h1 {
 
 }
 
+.datumMedewerkers {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 20px;
+}
+
 
 
 
@@ -336,7 +343,7 @@ form {
 .dateTimeContainer {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 0px;
     width: 350px;
 }
 
@@ -387,14 +394,23 @@ select[type="time"] option:hover {
 
 select[type="time"] option:checked {
     border: #202959 solid 1px;
-    background-color: white;
+    background-color: white;    
     box-shadow: 0px 0px 4px 0px black;    
 }
 
 
+select[type="persons"] option {
+    flex: 1;
+
+    padding: 10px;
+    padding-left: 1rem;
+}
+
 
 label {
     display: flex;
+    margin: 0;
+    
 }
 
 
@@ -409,7 +425,7 @@ label div {
 label input {
     flex: 1;
 
-
+    padding: 10px;
     padding-left: 1rem;
 }
 
@@ -447,11 +463,19 @@ label input {
   gap: 10px;
 
   color: #202959;
+  box-shadow: 4px 4px 15px black;
+
 }
 
 .form-container h2 {
     margin-bottom: 0;
     padding-bottom: 0;;
+}
+
+
+.form-container label input{
+    
+ 
 }
 
 

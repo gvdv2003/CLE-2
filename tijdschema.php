@@ -309,10 +309,11 @@ mysqli_close($db);
     <div class=containerMain>
 
        
-        <form action="" method="post">
+    <h2>Reserveringen voor <?= $date ?></h2>
+        <form class="datumMedewerkers" action="" method="post">
 
             <label for="date">
-            Datum:
+            
             <input type="date" id="date" name="date"  value="<?= htmlentities($date) ?>"/>
             <p class="help is-danger">
                 <?= $errors['date'] ?? '' ?>
@@ -330,7 +331,6 @@ mysqli_close($db);
 
 
 
-        <h2>reserveringen voor <?= $date ?></h2>
         <button class="collapsible"> 10:00      aantal mensen: <?= $totalp10 ?>     aantal groepen: <?= $totalg10 ?>   </button>
         <div class="content">
             <table class="table is-striped">
