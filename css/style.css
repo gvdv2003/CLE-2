@@ -430,6 +430,7 @@ label {
 
 
 
+
 label div {
     flex: 1;
     height: 30px;
@@ -437,7 +438,7 @@ label div {
 
 }
 
-label input {
+input {
     flex: 1;
 
     padding: 10px;

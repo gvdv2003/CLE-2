@@ -44,7 +44,6 @@ mysqli_close($db);
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Medewerkers</title>
 </head>
 <body>
@@ -91,9 +90,15 @@ mysqli_close($db);
     </nav>
 <main>
 
+<style>
+    main {
+        padding-left: 100px; 
+    }
+</style>
 
 
 
+<h1>Medewerker overview</h1>
 
 
     <div class="columns is-centered">
@@ -134,7 +139,29 @@ mysqli_close($db);
 
 
 
+<footer>
+            <section>
+                <div>
+                    <a href="">
+                        <p>Huisregels</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <p>Algemene voorwaarden</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <p>Privacyverklaring</p>
+                    </a>
+                </div>
+            </section>
+            <div>
+                <p>©2023 Cube Bouldergym</p>
+            </div>
 
+        </footer>
 
 
 

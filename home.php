@@ -16,8 +16,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 23vw;
-        font-size: 4rem;
+        margin-right: 24vw;
+        font-size: 3rem;
     }
 
     header {

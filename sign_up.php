@@ -3,7 +3,7 @@
 require_once "includes/database.php";
 
 // Get form data
-$user= [];
+$user = [];
 $firstName = "";
 $lastName = "";
 $email = "";
@@ -92,7 +92,7 @@ if (isset($_POST['submit'])) {
 
 </style>
 
-<main>
+
 
     <div class=container>
     <nav class=sidenav>
@@ -143,44 +143,87 @@ if (isset($_POST['submit'])) {
 
 
 
+    
 
 
+<style>
+
+label {
+    display:flex;
+    flex-direction:column;
+
+}
+
+label div{
+    display:flex;
+    justify-content:space-between;
+}
+
+label div p {
+    flex:1;
+}
 
 
+input[type="text"] {
+    padding: 5px;
+    height 
+    flex: 2;
+}
+
+input[type="submit"] {
+    padding: 10px 10px;
+    border: none;
+    background: none;
+    border: solid 1px black;
+    border-radius: 3px;
+    background: #F28705;
+    color: white;
+}
 
 
+</style>
 
 
+<main>
 
-    <h2>Registreren</h2>
+
+    <h1>Registreren</h1>
     <form action="sign_up.php" method="post">
         <label for="firstName">
-            Voornaam:
-            <input type="text" id="firstName" name="firstName" value="<?= htmlentities($firstName)?>"/>
+            <div>
+                <p>Voornaam:</p>
+                <input type="text" id="firstName" name="firstName" value="<?= htmlentities($firstName) ?>"/>
+            </div>
             <p class="help is-danger">
                 <?= $errors['firstName'] ?? '' ?>
             </p>
         </label>
 
         <label for="lastName">
-            Achternaam:
-            <input type="text" id="lastName" name="lastName" value="<?= htmlentities($lastName)?>"/>
+            <div>
+                <p>Achternaam:</p>           
+                <input type="text" id="lastName" name="lastName" value="<?= htmlentities($lastName) ?>"/>
+            </div>
             <p class="help is-danger">
                 <?= $errors['lastName'] ?? '' ?>
             </p>
         </label>
 
         <label for="email">
-            E-mail:
-            <input type="text" id="email" name="email" value="<?= htmlentities($email)?>"/>
+            <div>
+                <p>E-mail:</p>
+                <input type="text" id="email" name="email" value="<?= htmlentities($email) ?>"/>
+            </div>
             <p class="help is-danger">
                 <?= $errors['email'] ?? '' ?>
             </p>
         </label>
 
         <label for="password">
-            Wachtwoord:
-            <input type="password" id="password" name="password" value="<?= $password ?? ''?>"/>
+            <div>
+                <p>Wachtwoord:</p>
+                <input type="password" id="password" name="password" value="<?= $password ?? '' ?>"/>
+            </div>
             <p class="help is-danger">
                 <?= $errors['password'] ?? '' ?>
             </p>
@@ -189,14 +232,37 @@ if (isset($_POST['submit'])) {
         <input type="submit" name="submit">
 
 
-    </form
-
-
-
-
-
+</form>
 </main>
 
+
+
+
+
+
+<footer>
+            <section>
+                <div>
+                    <a href="">
+                        <p>Huisregels</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <p>Algemene voorwaarden</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <p>Privacyverklaring</p>
+                    </a>
+                </div>
+            </section>
+            <div>
+                <p>©2023 Cube Bouldergym</p>
+            </div>
+
+        </footer>
 </body>
 </html>
 

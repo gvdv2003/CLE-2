@@ -142,7 +142,7 @@ if (isset($_POST['submit'])) {
 
 <main>
 
-    <h2>inloggen</h2>
+    <h1>Inloggen</h1>
     <?php if (isset($_SESSION['login'])) { ?>
         <p>Je bent ingelogd!</p>
         <p><a href="logout.php">Uitloggen</a> / <a href="tijdschema.php">Naar het reservering overzicht</a></p>
@@ -158,7 +158,7 @@ if (isset($_POST['submit'])) {
 
                 <div class="field is-horizontal">
                     <div class="field-label is-normal">
-                        <label class="label" for="email">Email</label>
+                        <label class="label" for="email"><p>Email</p></label>
                     </div>
                     <div class="field-body">
                         <div class="field">
@@ -175,7 +175,7 @@ if (isset($_POST['submit'])) {
 
                 <div class="field is-horizontal">
                     <div class="field-label is-normal">
-                        <label class="label" for="password">Password</label>
+                        <label class="label" for="password"><p>Password</p></label>
                     </div>
                     <div class="field-body">
                         <div class="field">
